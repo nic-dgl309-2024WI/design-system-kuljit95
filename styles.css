@@ -5,3 +5,17 @@
     --light: #eeeeee; /* very light grey */
     --white: #ffffff; /* white */
 }
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+figure,
+picture {
+    margin: 0;
+}
+
+
