@@ -20,5 +20,8 @@ picture {
 * {
     box-sizing: border-box;
 }
-
+ul,
+li {
+    padding: 0;
+}
 
