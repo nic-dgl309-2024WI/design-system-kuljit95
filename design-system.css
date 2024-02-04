@@ -33,13 +33,14 @@
     color: var(--accent);
 }
 /* Mobile Nav */
-.menu--mobile .menu__tab--active {
+.mobile-nav .menu--mobile .menu__tab--active {
     color: var(--primary);
 }
 
 .menu--desktop {
     display: none;
 }
+
 /* Side Nav */
 aside .nav li a{
     color: var(--primary);
@@ -48,6 +49,13 @@ aside .nav li a{
 
 aside .nav li a:hover {
     color: var(--accent);
+}
+.navigation, .sidenav--desktop{
+    display:none;
+}
+.nav__option a{
+    text-decoration: none;
+    color: var(--primary);
 }
 /* Media Quary for responsive layout */
 @media (min-width: 768px) {
@@ -64,5 +72,8 @@ aside .nav li a:hover {
     }
     .logo {
         float: left;
+    }
+    .navigation, .sidenav--desktop{
+        display:block;
     }
 }
