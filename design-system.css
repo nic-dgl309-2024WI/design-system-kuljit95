@@ -49,3 +49,20 @@ aside .nav li a{
 aside .nav li a:hover {
     color: var(--accent);
 }
+/* Media Quary for responsive layout */
+@media (min-width: 768px) {
+    .topnav a.icon {
+        display: none;
+    }
+    .menu--desktop {
+        display: block;
+    }
+    .menu--desktop a {
+        max-width: 200px;
+        float: left;
+        display: inline;
+    }
+    .logo {
+        float: left;
+    }
+}
