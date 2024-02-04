@@ -9,6 +9,11 @@
 .topnav {
     overflow: hidden;
 }
+
+.topnav #links {
+    display: none;
+}
+
 .topnav a {
     padding: 10px;
     text-decoration: none;
@@ -17,10 +22,25 @@
     color: var(--primary);
 }
 
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 .topnav a:hover {
     color: var(--accent);
 }
+/* Mobile Nav */
+.menu--mobile .menu__tab--active {
+    color: var(--primary);
+}
 
+.menu--desktop {
+    display: none;
+}
+/* Side Nav */
 aside .nav li a{
     color: var(--primary);
     text-decoration: none;

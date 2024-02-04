@@ -16,12 +16,17 @@ ul,
 figure,
 picture {
     margin: 0;
+    background-color: var(--light);
 }
+h3{
+    padding-bottom:10px;
+    padding-top:20px;}
 * {
     box-sizing: border-box;
 }
 ul,
 li {
+    list-style-type: none;
     padding: 0;
 }
 
