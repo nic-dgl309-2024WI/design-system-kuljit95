@@ -57,6 +57,31 @@ aside .nav li a:hover {
     text-decoration: none;
     color: var(--primary);
 }
+
+/* page content */
+.content {
+    background-color:var(--clr-white);
+    padding: 10px;
+}
+.colors {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.title {
+    padding: 20px 0;
+}
+.row{
+    padding-bottom: 25px;
+}
+.column{
+    padding-bottom: 15px;
+}
+.c-colorswatch-primary{
+    height: 60px;
+    width: 100%;
+    background-color: var(--clr-primary);
+}
+
 /* Media Quary for responsive layout */
 @media (min-width: 768px) {
     .topnav a.icon {
