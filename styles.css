@@ -1,9 +1,11 @@
 :root {
-    --primary: #000000; /* black */
-    --secondary: #333333; /* dark grey */
-    --accent: #777777; /* dark grey */
-    --light: #eeeeee; /* very light grey */
-    --white: #ffffff; /* white */
+    --clr-primary: #333333;
+    --clr-secondry:#A01313;
+    --clr-light: #eeeeee;
+    --clr-white: #ffffff;
+    --clr-accent1:#002AE6;
+    --clr-accent2: #293C98;
+    --clr-accent3: #5E1386;
 }
 body,
 h1,
