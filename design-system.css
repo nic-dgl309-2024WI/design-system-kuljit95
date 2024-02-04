@@ -1,0 +1,31 @@
+/* topnav */
+.logo {
+    width: 20%;
+    float: none;
+}
+.menu.menu--desktop li {
+    float: right;
+}
+.topnav {
+    overflow: hidden;
+}
+.topnav a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    color: var(--primary);
+}
+
+.topnav a:hover {
+    color: var(--accent);
+}
+
+aside .nav li a{
+    color: var(--primary);
+    text-decoration: none;
+}
+
+aside .nav li a:hover {
+    color: var(--accent);
+}
