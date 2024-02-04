@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="design-system.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+    <!-- Top Navbar-->
+    <div class="topnav">
+      <nav class="nav">
+        <h2 class="logo">
+          <a href="index.html">Design System</a>
+        </h2>
+        <ul class="menu menu--desktop">
+          <li class="menu__tab menu__tab--active">
+            <a href="about-me.html">About Me</a>
+          </li>
+          <li class="menu__tab">
+            <a href="#">Demo Site</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- mobile Navbar-->
+      <nav class="mobile-nav" id='links'>
+      <ul class="menu menu--mobile">
+        <li class="menu__tab menu__tab--active">
+          <a href="about-me.html">About Me</a>
+        </li>
+        <li class="menu__tab">
+          <a href="#">Demo Site</a>
+        </li>
+      </ul>
+      <ul class="sidenav sidenav--mobile">
+        <h3 class="nav__option nav__option--bold">Branding</h3>
+        <li class="nav__option">
+          <a href="#">01 Colours</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">02 Typography</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">03 Logo</a>
+        </li>
+        <h3 class="nav__option nav__option--bold">Utilities</h3>
+        <li class="nav__option"><a href="#">04 Spacing</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">05 Containers</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">06 Images</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">07 Interactive</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">08 Feedback</a>
+        </li>
+        <h3 class="nav__option nav__option--bold">Navigation</h3>
+        <li class="nav__option">
+            <a href="#">09 Navbars</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">10 Breadcrumbs</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">11 Pagination</a>
+        </li>
+        <h3 class="nav__option nav__option--bold">Blocks</h3>
+        <li class="nav__option">
+            <a href="#">12 Hero</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">13 Carousel</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">14 Slats</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">15 Footer</a>
+        </li>
+        <h3 class="nav__option nav__option--bold">Components</h3>
+        <li class="nav__option">
+            <a href="#">16 Cards</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">17 Forms</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">18 Accordion</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">19 Lists</a>
+        </li>
+      </ul>
+    </nav>
+      <a class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- Side Navbar -->
+    <aside class="navigation">
+      <ul class="sidenav sidenav--desktop">
+        <h3 class="nav__option nav__option--bold">Branding</h3>
+        <li class="nav__option">
+          <a href="#">01 Colours</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">02 Typography</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">03 Logo</a>
+        </li>
+        <h3 class="nav__option nav__option--bold">Utilities</h3>
+        <li class="nav__option"><a href="#">04 Spacing</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">05 Containers</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">06 Images</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">07 Interactive</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">08 Feedback</a>
+        </li>
+        <h3 class="nav__option nav__option--bold">Navigation</h3>
+        <li class="nav__option">
+            <a href="#">09 Navbars</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">10 Breadcrumbs</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">11 Pagination</a>
+        </li>
+        <h3 class="nav__option nav__option--bold">Blocks</h3>
+        <li class="nav__option">
+            <a href="#">12 Hero</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">13 Carousel</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">14 Slats</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">15 Footer</a>
+        </li>
+        <h3 class="nav__option nav__option--bold">Components</h3>
+        <li class="nav__option">
+            <a href="#">16 Cards</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">17 Forms</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">18 Accordion</a>
+        </li>
+        <li class="nav__option">
+            <a href="#">19 Lists</a>
+        </li>
+      </ul>
+    </aside>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <script type="text/javascript" scr="design-system.js"></script>
+  </body>
+</html>
