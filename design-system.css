@@ -81,6 +81,12 @@ aside .nav li a:hover {
     width: 100%;
     background-color: var(--clr-primary);
 }
+.c-colorswatch-secondry{
+    height: 60px;
+    width: 100%;
+    background-color: var(--clr-secondry);
+}
+
 
 /* Media Quary for responsive layout */
 @media (min-width: 768px) {
