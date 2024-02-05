@@ -76,6 +76,10 @@ aside .nav li a:hover {
 .column{
     padding-bottom: 15px;
 }
+.c-colorswatch {
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
 .c-colorswatch-primary{
     height: 60px;
     width: 100%;
