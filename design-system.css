@@ -91,6 +91,11 @@ aside .nav li a:hover {
     width: 100%;
     background-color: var(--clr-light);
 }
+.c-colorswatch-white{
+    height: 60px;
+    width: 100%;
+    background-color: var(--clr-white);
+}
 
 /* Media Quary for responsive layout */
 @media (min-width: 768px) {
