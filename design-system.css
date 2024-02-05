@@ -30,11 +30,11 @@
 }
 
 .topnav a:hover {
-    color: var(--accent);
+    color: var(--clr-accent1);
 }
 /* Mobile Nav */
 .mobile-nav .menu--mobile .menu__tab--active {
-    color: var(--primary);
+    color: var(--clr-primary);
 }
 
 .menu--desktop {
@@ -43,19 +43,19 @@
 
 /* Side Nav */
 aside .nav li a{
-    color: var(--primary);
+    color: var(--clr-primary);
     text-decoration: none;
 }
 
 aside .nav li a:hover {
-    color: var(--accent);
+    color: var(--clr-accent1);
 }
 .navigation, .sidenav--desktop{
     display:none;
 }
 .nav__option a{
     text-decoration: none;
-    color: var(--primary);
+    color: var(--clr-primary);
 }
 
 /* page content */
