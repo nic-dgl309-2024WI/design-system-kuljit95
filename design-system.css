@@ -3,7 +3,7 @@
     width: 20%;
     float: none;
 }
-.menu.menu--desktop li {
+nav .menu.menu--desktop li {
     float: right;
 }
 .topnav {
@@ -19,7 +19,7 @@
     text-decoration: none;
     font-size: 17px;
     display: block;
-    color: var(--primary);
+    color: var(--clr-primary);
 }
 
 .topnav a.icon {
@@ -53,6 +53,12 @@ aside .nav li a:hover {
 .navigation, .sidenav--desktop{
     display:none;
 }
+aside.navigation {
+    width: 20%;
+    float: left;
+    padding: 0px 10px 0px 10px;
+    min-height:1000px;
+}
 .nav__option a{
     text-decoration: none;
     color: var(--clr-primary);
@@ -75,6 +81,9 @@ aside .nav li a:hover {
 }
 .column{
     padding-bottom: 15px;
+}
+.column:nth-child(2) {
+    font-style: italic;
 }
 .c-colorswatch {
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
@@ -131,7 +140,29 @@ aside .nav li a:hover {
     .logo {
         float: left;
     }
+    
     .navigation, .sidenav--desktop{
         display:block;
+    }
+    /* Content Page */
+    .content {
+        width: 80%;
+        float: left;
+        min-height:1000px;
+    }
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+    }
+    section{
+        clear: both;
+    }
+    .nav__option {
+        padding-bottom: 10px;
+        font-weight: 500;
+    }
+    .nav__option .nav__option--active{
+        color: var(--clr-accent1);
     }
 }
