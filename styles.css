@@ -58,4 +58,15 @@ li {
     font-weight: var(--font-weight-bold);
     font-style: normal;
 }
-
+.font-large {
+    font-size: var(--font-size-48);
+    font-weight: var(--font-weight-bold);
+}
+.font-medium {
+    font-size: var(--font-size-24);
+    font-weight: var(--font-weight-medium);
+}
+.font-small {
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-light);
+}
