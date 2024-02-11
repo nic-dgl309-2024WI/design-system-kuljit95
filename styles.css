@@ -8,6 +8,12 @@
     --clr-accent3: #5E1386;
 
     --font-family: "Poppins", sans-serif;
+
+    --font-size-48: 48px;
+    --font-size-36: 36px;
+    --font-size-24: 24px;
+    --font-size-18: 18px;
+    --font-size-16: 16px;
 }
 body,
 h1,
