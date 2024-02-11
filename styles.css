@@ -53,3 +53,9 @@ li {
     font-weight: var(--font-weight-medium);
     font-style: normal;
 }
+.poppins-bold {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-bold);
+    font-style: normal;
+}
+
