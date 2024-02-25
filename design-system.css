@@ -1,20 +1,24 @@
-/* topnav */
+/* ---------------------------- Logo width described ---------------------------- */
 .logo {
     width: 20%;
     float: none;
 }
+
+/* ----------------------- Set all nav menu List float right for desktop  ----------------------- */
 nav .menu.menu--desktop li {
     float: right;
 }
-.topnav {
+.c-topnav {
     overflow: hidden;
 }
 
-.topnav #links {
+/* ---------------------------- Hiding top nav on mobile ---------------------------- */
+.c-topnav #links {
     display: none;
 }
 
-.topnav a {
+/* ---------------------------- styling top nav ---------------------------- */
+.c-topnav a {
     padding: 10px;
     text-decoration: none;
     font-size: 17px;
@@ -22,119 +26,157 @@ nav .menu.menu--desktop li {
     color: var(--clr-primary);
 }
 
-.topnav a.icon {
+/* ---------------------------- Displaying menu toggle icon for mobile menu  ---------------------------- */
+.c-topnav a.icon {
     display: block;
     position: absolute;
     right: 0;
     top: 0;
 }
 
-.topnav a:hover {
+/* ---------------------------- Styling colour on hover for menu item ---------------------------- */
+.c-topnav a:hover {
     color: var(--clr-accent1);
 }
-/* Mobile Nav */
+
+/* ---------------------------- Setting active links color ---------------------------- */
 .mobile-nav .menu--mobile .menu__tab--active {
     color: var(--clr-primary);
 }
 
+/* ---------------------------- Hiding desktop menu ---------------------------- */
 .menu--desktop {
     display: none;
 }
 
-/* Side Nav */
+/* ---------------------------- Setting color for side nav links ---------------------------- */
 aside .nav li a{
     color: var(--clr-primary);
     text-decoration: none;
 }
 
+/* ---------------------------- Setting Hover links color ---------------------------- */
 aside .nav li a:hover {
     color: var(--clr-accent1);
 }
+
+/* ---------------------------- Hiding side nav on desktop ---------------------------- */
 .navigation, .sidenav--desktop{
     display:none;
 }
+
+/* ---------------------------- Styling side nav ---------------------------- */
 aside.navigation {
     width: 20%;
     float: left;
     padding: 0px 10px 0px 10px;
     min-height:1000px;
 }
+
+/* ---------------------------- Styling sidenav ---------------------------- */
 .nav__option a{
     text-decoration: none;
     color: var(--clr-primary);
 }
 
-/* page content */
-
+/* ---------------------------- Apply shadow for colour swatches  ---------------------------- */
 .c-colorswatch {
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
     border-radius: 5px;
 }
+
+/* ---------------------------- Styling primary colour swatch ---------------------------- */
 .c-colorswatch-primary{
     height: 60px;
     width: 100%;
     background-color: var(--clr-primary);
 }
+
+/* ---------------------------- Styling secondary colour swatch ---------------------------- */
 .c-colorswatch-secondry{
     height: 60px;
     width: 100%;
     background-color: var(--clr-secondry);
 }
+
+/* ---------------------------- Styling light colour swatch ---------------------------- */
 .c-colorswatch-light{
     height: 60px;
     width: 100%;
     background-color: var(--clr-light);
 }
+
+/* ---------------------------- Styling white colour swatch ---------------------------- */
 .c-colorswatch-white{
     height: 60px;
     width: 100%;
     background-color: var(--clr-white);
 }
+
+/* ---------------------------- Styling accent1 colour swatch ---------------------------- */
 .c-colorswatch-accent1{
     height: 60px;
     width: 100%;
     background-color: var(--clr-accent1);
 }
+
+/* ---------------------------- Styling accent2 colour swatch ---------------------------- */
 .c-colorswatch-accent2{
     height: 60px;
     width: 100%;
     background-color: var(--clr-accent2);
 }
+
+/* ---------------------------- Styling accent3 colour swatch ---------------------------- */
 .c-colorswatch-accent3{
     height: 60px;
     width: 100%;
     background-color: var(--clr-accent3);
 }
-/* Media Quary for responsive layout */
+
+/* ---------------------------- media quaries - desktop specific ---------------------------- */
 @media (min-width: 768px) {
-    .topnav a.icon {
+    /* ---------------------------- Hiding Toggle icon from desktop ---------------------------- */
+    .c-topnav a.icon {
         display: none;
     }
+
+    /* ---------------------------- Showing Top menu for desktop ---------------------------- */
     .menu--desktop {
         display: block;
     }
+
+    /* ---------------------------- Styling topnav menu item for desktop ---------------------------- */
     .menu--desktop a {
         max-width: 200px;
         float: left;
         display: inline;
     }
+
+    /* ---------------------------- Setting Logo stays on left ---------------------------- */
     .logo {
         float: left;
     }
     
+    /* ---------------------------- Showing sidenav on desktop ---------------------------- */
     .navigation, .sidenav--desktop{
         display:block;
     }
+
     /* Content Page */
     
-    
+    /* ---------------------------- Removing floats ---------------------------- */
     section{
         clear: both;
     }
+
+    /* ---------------------------- Styling Styling sidenav Items ---------------------------- */
     .nav__option {
         padding-bottom: 10px;
         font-weight: 500;
     }
+
+    /* ---------------------------- Styling Nav item active colour ---------------------------- */
     .nav__option .nav__option--active{
         color: var(--clr-accent1);
     }
