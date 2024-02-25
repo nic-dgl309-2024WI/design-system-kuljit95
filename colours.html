@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Stylesheet files -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="design-system.css">
+
+    <!-- Font awesome -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- Top Navbar-->
+    
+    <!-- Top Navigation for desktop-->
     <div class="topnav">
       <nav class="nav">
         <h2 class="logo">
@@ -25,7 +30,7 @@
           </li>
         </ul>
       </nav>
-      <!-- mobile Navbar-->
+      <!-- Top Navigation for mobile -->
       <nav class="mobile-nav" id='links'>
       <ul class="menu menu--mobile">
         <li class="menu__tab menu__tab--active">
@@ -35,6 +40,8 @@
           <a href="#">Demo Site</a>
         </li>
       </ul>
+
+      <!-- Side nav for mobile -->
       <ul class="sidenav sidenav--mobile">
         <h3 class="nav__option nav__option--bold">Branding</h3>
         <li class="nav__option">
@@ -99,6 +106,8 @@
         </li>
       </ul>
     </nav>
+
+    <!-- Toggle -->
       <a class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
@@ -169,15 +178,21 @@
         </li>
       </ul>
     </aside>
+    <!-- Main Content-->
     <section>
         <h1><span>01</span> Colours</h1>
+        <!-- primary colours swatches -->
         <h2>Primary colors</h2>
+
+        <!-- Creating colour swatch for primary colour -->
             <p>bg-primary</p>
             <p>#333333</p>
             <p>--clr-primary</p>
             <p>Headings, Subheadings, Paragraphs.</p> 
             <p>12.63:1 (PASS) using clr-white on it.</p>
             <div class="c-colorswatch c-colorswatch-primary"></div>
+
+            <!-- Creating colour swatch for secondary colour -->
               <p>bg-secondry</p>
               <p>#A01313</p>
               <p>--clr-secondry</p>
@@ -185,19 +200,27 @@
               <p>Icon Backgrounds.</p>
               <p>8.08:1 (PASS) using clr-white on it.</p>
               <div class="c-colorswatch c-colorswatch-secondry"></div>
+
+              <!-- Creating colour swatch for light colour -->
               <p>bg-light</p>
               <p>#eeeeee</p>
               <p>--clr-light</p>
               <p>Backgrounds</p>
               <p>10.88:1 (PASS) using clr-primary on it.</p>
               <div class="c-colorswatch c-colorswatch-light"></div>
+
+              <!-- Creating colour swatch for white colour -->
               <p>bg-white</p>
               <p>#ffffff</p>
               <p>--clr-white</p>
               <p>Backgrounds, Reverse Text</p>
               <p>12.63:1 (PASS) using clr-primary on it.</p>
               <div class="c-colorswatch c-colorswatch-white"></div>
+
+              <!-- Accent colour swatches -->
             <h2>Accent colors</h2>
+
+            <!-- Creating colour swatches for accent1 -->
                 <p>bg-accent1</p>
                 <p>#002AE6</p>
                 <p>--clr-accent1</p>
@@ -205,12 +228,16 @@
                 <p>Hover.</p>
                 <p>7.31:1 (PASS) used on bg-light.</p>
                 <div class="c-colorswatch c-colorswatch-accent1"></div>
+
+                <!-- Creating colour swatch for accent2 -->
                   <p>bg-accent2</p>
                   <p>#293C98</p>
                   <p>--clr-accent2</p>
                   <p>Decorative</p>
                   <p>8.24:1 (PASS) used on bg-light.</p>
                   <div class="c-colorswatch c-colorswatch-accent2"></div>
+
+                  <!-- Creating colour swatch for accent3 -->
                 <p>bg-accent3</p>
                 <p>#5E1386</p>
                 <p>--clr-accent3</p>
@@ -228,6 +255,7 @@
         }
       }
     </script>
+    <!-- javaScript files -->
     <script type="text/javascript" scr="design-system.js"></script>
   </body>
 </html>
