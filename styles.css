@@ -6,36 +6,45 @@
     --clr-accent1:#002AE6;
     --clr-accent2: #293C98;
     --clr-accent3: #5E1386;
+/* ----------------------------------- font families ---------------------------------- */
+    --font-primary: "Roboto", sans-serif;
+    --font-secondary: "PT Serif", sans-serif;
 
-    
-    --font-family: "Poppins", sans-serif;
-
+/* --------------------------------- font size ------------------------------- */    
     --font-size-48: 48px;
     --font-size-36: 36px;
     --font-size-24: 24px;
     --font-size-18: 18px;
     --font-size-16: 16px;
 
+/* --------------------------------- font weight -------------------------------- */
     --font-weight-light: 300;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
+
 }
 body,
-h1,
-h2,
-h3,
-h4,
-h5,
 p,
 ul,
 figure,
 picture {
     margin: 0;
-    background-color: var(--light);
+    font-family: var(--font-secondary);
 }
-h3{
+
+h1,
+h2,
+h3,
+h3,
+h5 {
+    margin: 0;
+    font-family: var(--font-primary);
+}
+
+h3 {
     padding-bottom:10px;
-    padding-top:20px;}
+    padding-top:20px;
+}
 * {
     box-sizing: border-box;
 }
@@ -44,30 +53,110 @@ li {
     list-style-type: none;
     padding: 0;
 }
-.poppins-light {
-    font-family: var(--font-family);
-    font-weight: var(--font-weight-light);
-    font-style: normal;
+
+
+/* --------------------------------------- Utility classes -------------------------------------- */
+
+/* ----------------- Background and text colours ----------------- */
+.u-text-primary {
+    color: var(--clr-primary);
 }
-.poppins-medium {
-    font-family: var(--font-family);
-    font-weight: var(--font-weight-medium);
-    font-style: normal;
+
+.u-text-primary {
+	color: var(--clr-primary);
 }
-.poppins-bold {
-    font-family: var(--font-family);
-    font-weight: var(--font-weight-bold);
-    font-style: normal;
+
+.u-bg-primary {
+	background-color: var(--clr-primary);
 }
-.font-large {
-    font-size: var(--font-size-48);
-    font-weight: var(--font-weight-bold);
+
+.u-text-secondary {
+	color: var(--clr-secondary);
 }
-.font-medium {
-    font-size: var(--font-size-24);
-    font-weight: var(--font-weight-medium);
+
+.u-bg-secondary {
+	background-color: var(--clr-secondary);
 }
-.font-small {
-    font-size: var(--font-size-16);
-    font-weight: var(--font-weight-light);
+
+.u-text-light {
+	color: var(--clr-light);
+}
+
+.u-bg-light {
+	background-color: var(--clr-light);
+}
+
+.u-text-white {
+	color: var(--clr-white);
+}
+
+.u-bg-white {
+	background-color: var(--clr-white);
+}
+
+.u-text-accent1 {
+	color: var(--clr-accent1);
+}
+
+.u-bg-accent1 {
+	background-color: var(--clr-accent1);
+}
+
+.u-text-accent2 {
+	color: var(--clr-accent2);
+}
+
+.u-bg-accent2 {
+	background-color: var(--clr-accent2);
+}
+
+.u-text-accent3 {
+	color: var(--clr-accent3);
+}
+
+.u-bg-accent3 {
+	background-color: var(--clr-accent3);
+}
+
+/* font family */
+.u-font-primary {
+	font-family: var(--font-primary) !important;
+}
+
+.u-font-secondary {
+	font-family: var(--font-secondary) !important;
+}
+
+/* font size variations */
+.u-font-size-48 {
+	font-size: var(--font-size-48);
+}
+
+.u-font-size-36 {
+	font-size: var(--font-size-36);
+}
+
+.u-font-size-24 {
+	font-size: var(--font-size-24);
+}
+
+.u-font-size-18 {
+	font-size: var(--font-size-18);
+}
+
+.u-font-size-16 {
+	font-size: var(--font-size-16);
+}
+
+/* font weight variations */
+.u-font-weight-light {
+	font-weight: var(--font-weight-light);
+}
+
+.u-font-weight-medium {
+	font-weight: var(--font-weight-medium);
+}
+
+.u-font-weight-bold {
+	font-weight: var(--font-weight-bold);
 }
