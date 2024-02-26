@@ -21,7 +21,7 @@ nav .menu.menu--desktop li {
 .c-topnav a {
     padding: 10px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: var(--font-size-16);
     display: block;
     color: var(--clr-primary);
 }
@@ -50,13 +50,13 @@ nav .menu.menu--desktop li {
 }
 
 /* ---------------------------- Setting color for side nav links ---------------------------- */
-aside .nav li a{
+aside .sidenav li a{
     color: var(--clr-primary);
     text-decoration: none;
 }
 
 /* ---------------------------- Setting Hover links color ---------------------------- */
-aside .nav li a:hover {
+aside .sidenav li a:hover {
     color: var(--clr-accent1);
 }
 
