@@ -64,9 +64,6 @@ li {
 /* --------------------------------------- Utility classes -------------------------------------- */
 
 /* ----------------- Background and text colours ----------------- */
-.u-text-primary {
-    color: var(--clr-primary);
-}
 
 .u-text-primary {
 	color: var(--clr-primary);
