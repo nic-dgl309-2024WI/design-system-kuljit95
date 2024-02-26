@@ -79,6 +79,11 @@ aside.navigation {
     color: var(--clr-primary);
 }
 
+/* ------------------------- Styling numbered list color ------------------------- */
+.nav__option a span {
+	color: var(--clr-accent3);
+}
+
 /* ---------------------------- Apply shadow for colour swatches  ---------------------------- */
 .c-colorswatch {
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);

@@ -22,6 +22,12 @@
     --font-weight-medium: 500;
     --font-weight-bold: 700;
 
+/* -------------------------------- Letter spacing -------------------------------- */
+    --letterspacing-md: 2px;
+
+/* -------------------------------- Line Height ------------------------------- */
+    --lineheight-md: 1.5;
+
 }
 body,
 p,
@@ -118,7 +124,7 @@ li {
 	background-color: var(--clr-accent3);
 }
 
-/* font family */
+/* -------------------font family -------------------*/
 .u-font-primary {
 	font-family: var(--font-primary) !important;
 }
@@ -127,7 +133,7 @@ li {
 	font-family: var(--font-secondary) !important;
 }
 
-/* font size variations */
+/* ---------------------- font size variations -------------------- */
 .u-font-size-48 {
 	font-size: var(--font-size-48);
 }
@@ -148,7 +154,7 @@ li {
 	font-size: var(--font-size-16);
 }
 
-/* font weight variations */
+/* ---------------------------- font weight variations ------------------------*/
 .u-font-weight-light {
 	font-weight: var(--font-weight-light);
 }
@@ -159,4 +165,14 @@ li {
 
 .u-font-weight-bold {
 	font-weight: var(--font-weight-bold);
+}
+
+/* ----------------------- Letter Spacing -------------------------*/
+.u-letter-spacing {
+    letter-spacing: var(--letterspacing-md);
+}
+
+/* -------------------------- Letter Height -----------------------*/
+.u-line-height {
+    line-height: var(--lineheight-md);
 }
