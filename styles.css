@@ -204,7 +204,7 @@ li {
 .l-mb-1 {
     margin-bottom: 1rem;
   }
-  
+
   /* Apply margin to Right */
 .l-mr-1 {
     margin-right: 1rem;
@@ -215,3 +215,21 @@ li {
     display: flex;
     align-items: center;
   }
+
+  /* Apply margin to Left */
+.l-ml-1 {
+    margin-left: 1rem;
+  }
+  
+  /* Apply margin Horizontally Both to Left and Right side */
+  .l-mx-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  /* Apply margin Verticaly to Top and Bottom */
+  .l-my-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
