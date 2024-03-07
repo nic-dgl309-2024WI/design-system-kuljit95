@@ -196,6 +196,9 @@ li {
   margin: 1rem;
 }
 
+.l-mt-1 {
+    margin-top: 1rem;
+  }
 
   /* To set content center */
 .center-content {
