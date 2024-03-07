@@ -205,6 +205,10 @@ li {
     margin-bottom: 1rem;
   }
   
+  /* Apply margin to Right */
+.l-mr-1 {
+    margin-right: 1rem;
+  }
 
   /* To set content center */
 .center-content {
