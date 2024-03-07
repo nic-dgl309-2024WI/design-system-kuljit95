@@ -173,3 +173,32 @@ li {
 .u-line-height {
     line-height: var(--lineheight-md);
 }
+
+
+/* ------------------------ To set display flex --------------------- */
+.l-flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .box {
+	width: 200px;
+	height: 200px;
+	background-color: cornflowerblue;
+	border: 2px solid black; /* Add border to make margin visible */
+}
+
+
+/* Layout Margins */
+
+/* Apply margin to all four sides */
+.l-m {
+  margin: 1rem;
+}
+
+
+  /* To set content center */
+.center-content {
+    display: flex;
+    align-items: center;
+  }
