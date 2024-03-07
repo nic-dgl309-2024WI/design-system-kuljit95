@@ -195,10 +195,16 @@ li {
 .l-m {
   margin: 1rem;
 }
-
+/* Apply margin to Top */
 .l-mt-1 {
     margin-top: 1rem;
   }
+
+  /* Apply margin to Bottom */
+.l-mb-1 {
+    margin-bottom: 1rem;
+  }
+  
 
   /* To set content center */
 .center-content {
