@@ -181,6 +181,12 @@ li {
     flex-direction: row;
   }
 
+  /* To set display grid */
+.l-grid {
+    display: grid;
+    flex-direction: column;
+  }
+
   .box {
 	width: 200px;
 	height: 200px;
@@ -270,3 +276,26 @@ li {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }  
+
+  /* To set side bar sticky */
+.sticky-sidebar {
+    position: sticky;
+    top: 50px;
+    height: auto;
+    min-width: 210px;
+    max-width: 210px;
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    order: 1;
+  }
+  
+  /* To set header sticky */
+  .sticky-header {
+      position: fixed;
+    top: 0;
+      width: 100%;
+      background-color: var(--clr-light);
+      z-index:999;
+  }		
