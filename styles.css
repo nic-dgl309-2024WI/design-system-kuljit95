@@ -29,13 +29,15 @@
     --lineheight-md: 1.5;
 
 }
+
 body,
 p,
 ul,
 figure,
 picture {
-    margin: 0;
-    font-family: var(--font-secondary);
+  margin: 0;
+	font-family: var(--font-secondary);
+	line-height: var(--lineheight-md);
 }
 
 h1,
@@ -43,8 +45,10 @@ h2,
 h3,
 h3,
 h5 {
-    margin: 0;
-    font-family: var(--font-primary);
+  margin: 0;
+	font-family: var(--font-primary);
+	letter-spacing: var(--letterspacing-md);
+	line-height: var(--lineheight-md);
 }
 
 h3 {

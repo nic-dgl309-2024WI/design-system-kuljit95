@@ -42,7 +42,7 @@ nav .menu.menu--desktop li {
 }
 
 /* ---------------------------- Setting active links color ---------------------------- */
-.mobile-nav .menu--mobile .menu__tab--active {
+.mobile-nav .menu--mobile {
     color: var(--clr-primary);
 }
 
@@ -64,13 +64,13 @@ aside .sidenav li a:hover {
 
 /* ---------------------------- Hiding side nav on desktop ---------------------------- */
 .navigation, .sidenav--desktop{
-    display:none;
+    display: none;
 }
 
 /* ---------------------------- Styling side nav ---------------------------- */
 aside.navigation {
 	width: 20%;
-	padding: 0px 10px 0px 10px;
+	padding: 60px 10px 0px 10px;
 	background-color: var(--clr-light);
 	min-height: 1500px;
 	height: 100%;
@@ -90,6 +90,17 @@ aside.navigation {
 /* ------------------------- Styling numbered list color ------------------------- */
 .nav__option a span {
 	color: var(--clr-accent3);
+}
+
+h3.nav__option {
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+/* ------------------------- Defining H1 Padding ------------------------- */
+h1 {
+
+	padding-top: 60px;
 }
 
 /* ------------------------- Styling Main content section ------------------------- */
@@ -199,11 +210,13 @@ h2.title {
         max-width: 200px;
         float: left;
         display: inline;
+        font-weight: 400;
     }
 
     /* ---------------------------- Setting Logo stays on left ---------------------------- */
     .logo {
         float: left;
+        font-weight: 400;
     }
     
     /* ---------------------------- Showing sidenav on desktop ---------------------------- */
@@ -249,6 +262,10 @@ h2.title {
 		width: 60%;
 	}
 	
+    /* ------------------------- Removing floats ------------------------- */
+	section {
+		clear: both;
+	}
     /* ---------------------------- Styling Styling sidenav Items ---------------------------- */
     .nav__option {
         padding-bottom: 5px;
@@ -259,4 +276,7 @@ h2.title {
     .nav__option .nav__option--active{
         color: var(--clr-accent1);
     }
+}
+.menu__tab .nav__option--active {
+	color: var(--clr-accent1);
 }
