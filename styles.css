@@ -340,3 +340,11 @@ li {
 	padding: 10px;
 	text-align: center;
 }
+
+.max-width {
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: lightcoral;
+	padding: 20px 20px 60px 20px;
+	box-sizing: border-box;
+}
