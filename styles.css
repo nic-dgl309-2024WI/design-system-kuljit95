@@ -328,3 +328,15 @@ li {
 	padding: 10px;
 	box-sizing: border-box;
 }
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.grid-item {
+	background-color: lightgreen;
+	padding: 10px;
+	text-align: center;
+}
