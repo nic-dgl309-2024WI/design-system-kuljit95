@@ -232,4 +232,41 @@ li {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+/* Padding */
+
+/* Apply Padding to all four sides */
+.l-p {
+    padding: 1rem;
+  }
   
+  /* Apply padding to Top */
+  .l-pt-1 {
+    padding-top: 1rem;
+  }
+  
+  /* Apply padding to Bottom */
+  .l-pb-1 {
+    padding-bottom: 1rem;
+  }
+  
+  /* Apply padding to Right */
+  .l-pr-1 {
+    padding-right: 1rem;
+  }
+  
+  /* Apply padding to Left */
+  .l-pl-1 {
+    padding-left: 1rem;
+  }
+  
+  /* Apply padding Horizontally Both to Left and Right side */
+  .l-px-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Apply padding Verticaly to Top and Bottom */
+  .l-py-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }  
