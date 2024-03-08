@@ -348,3 +348,10 @@ li {
 	padding: 20px 20px 60px 20px;
 	box-sizing: border-box;
 }
+
+.full-width {
+	width: 100%;
+	background-color: lightpink;
+	padding: 20px 20px 60px 20px;
+	box-sizing: border-box;
+}
