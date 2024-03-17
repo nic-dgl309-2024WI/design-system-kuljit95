@@ -322,8 +322,8 @@ li {
 }
 
 /* max-width 500ox */
-.width-700{
-	max-width: 700px;
+.width-500{
+	max-width: 500px;
 	margin: 0 auto;
 }
 
@@ -384,7 +384,7 @@ li {
 
 .full-width {
 	width: 100%;
-	background-color: lightpink;
+	/* background-color: lightpink; */
 	padding: 20px 20px 60px 20px;
 	box-sizing: border-box;
 }
