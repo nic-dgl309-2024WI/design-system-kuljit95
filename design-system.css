@@ -140,8 +140,8 @@ h2.title {
 
 /* ---------------------------- Apply shadow for colour swatches  ---------------------------- */
 .c-colorswatch {
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
-    border-radius: 5px;
+	border: 1px solid var(--clr-primary);
+	margin-top: 1rem;
 }
 
 /* ---------------------------- Styling primary colour swatch ---------------------------- */
