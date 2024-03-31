@@ -16,6 +16,7 @@
     --font-size-24: 24px;
     --font-size-18: 18px;
     --font-size-16: 16px;
+    --font-size-14: 14px;
 
 /* --------------------------------- font weight -------------------------------- */
     --font-weight-light: 300;
@@ -27,6 +28,17 @@
 
 /* -------------------------------- Line Height ------------------------------- */
     --lineheight-md: 1.5;
+
+  --spacing: 1rem;
+	--spacing2: 2rem;
+	--spacing-0: 0px; 
+	--spacing-10: 10px; 
+	--spacing-15: 15px; 
+	--spacing-20: 20px; 
+	--spacing-25: 25px; 
+	--spacing-40: 40px; 
+	--spacing-60: 60px; 
+	--spacing-80: 80px;
 
 }
 
@@ -389,4 +401,299 @@ li {
 	/* background-color: lightpink; */
 	padding: 20px 20px 60px 20px;
 	box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------*/
+/* ---------------------------- Logo width described ---------------------------- */
+.logo {
+  width: 20%;
+  float: none;
+}
+
+/* ----------------------- Set all nav menu List float right for desktop  ----------------------- */
+nav .menu.menu--desktop li {
+  float: right;
+}
+/* ------------------------- Set Background color of top nav ------------------------- */
+.c-topnav {
+overflow: hidden;
+background-color: var(--clr-light);
+}
+
+/* ---------------------------- Hiding top nav on mobile ---------------------------- */
+.c-topnav #links {
+  display: none;
+}
+
+/* ---------------------------- styling top nav ---------------------------- */
+.c-topnav a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: var(--font-size-16);
+  display: block;
+  color: var(--clr-primary);
+}
+
+/* ---------------------------- Displaying menu toggle icon for mobile menu  ---------------------------- */
+.c-topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* ---------------------------- Styling colour on hover for menu item ---------------------------- */
+.c-topnav a:hover {
+  color: var(--clr-accent1);
+}
+
+/* ---------------------------- Setting active links color ---------------------------- */
+.mobile-nav .menu--mobile {
+  color: var(--clr-primary);
+}
+
+/* ---------------------------- Hiding desktop menu ---------------------------- */
+.menu--desktop {
+  display: none;
+}
+
+/* ---------------------------- Setting color for side nav links ---------------------------- */
+aside .sidenav li a{
+  color: var(--clr-primary);
+  text-decoration: none;
+}
+
+/* ---------------------------- Setting Hover links color ---------------------------- */
+aside .sidenav li a:hover {
+  color: var(--clr-accent1);
+}
+
+/* ---------------------------- Hiding side nav on desktop ---------------------------- */
+.navigation, .sidenav--desktop{
+  display: none;
+}
+
+/* ---------------------------- Styling side nav ---------------------------- */
+aside.navigation {
+width: 20%;
+padding: 60px 10px 0px 10px;
+background-color: var(--clr-light);
+min-height: 1500px;
+height: 100%;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+/* overflow-x: hidden; */
+}
+
+/* ---------------------------- Styling sidenav ---------------------------- */
+.nav__option a{
+  text-decoration: none;
+  color: var(--clr-primary);
+}
+
+/* ------------------------- Styling numbered list color ------------------------- */
+.nav__option a span {
+color: var(--clr-accent3);
+}
+
+h3.nav__option {
+padding-bottom: 0px;
+padding-top: 0px;
+}
+
+/* ------------------------- Defining H1 Padding ------------------------- */
+h1 {
+
+padding-top: 60px;
+}
+
+/* ------------------------- Styling Main content section ------------------------- */
+.content {
+background-color: var(--clr-white);
+padding: 10px;
+}
+
+/* ------------------------- Styling Rows In content ------------------------- */
+.row {
+padding-bottom: 25px;
+width: 100%;
+clear: both;
+}
+
+/* ------------------------- Setting Columns with 33% width In content ------------------------- */
+.column33 {
+padding-bottom: 15px;
+}
+
+/* ------------------------- Styling second column of Rows In content ------------------------- */
+.column33:nth-child(2) {
+font-style: italic;
+}
+
+/* ------------------------- Setting Page width ------------------------- */
+.page {
+max-width: 900px;
+margin: 0 auto;
+}
+
+/* ------------------------- Setting padding for H2 ------------------------- */
+h2.title {
+padding: 20px 0;
+}
+
+
+/* ---------------------------- Apply shadow for colour swatches  ---------------------------- */
+.c-colorswatch {
+border: 1px solid var(--clr-primary);
+margin-top: 1rem;
+}
+
+/* ---------------------------- Styling primary colour swatch ---------------------------- */
+.c-colorswatch-primary{
+  height: 60px;
+  width: 100%;
+  background-color: var(--clr-primary);
+}
+
+/* ---------------------------- Styling secondary colour swatch ---------------------------- */
+.c-colorswatch-secondry{
+  height: 60px;
+  width: 100%;
+  background-color: var(--clr-secondry);
+}
+
+/* ---------------------------- Styling light colour swatch ---------------------------- */
+.c-colorswatch-light{
+  height: 60px;
+  width: 100%;
+  background-color: var(--clr-light);
+}
+
+/* ---------------------------- Styling white colour swatch ---------------------------- */
+.c-colorswatch-white{
+  height: 60px;
+  width: 100%;
+  background-color: var(--clr-white);
+}
+
+/* ---------------------------- Styling accent1 colour swatch ---------------------------- */
+.c-colorswatch-accent1{
+  height: 60px;
+  width: 100%;
+  background-color: var(--clr-accent1);
+}
+
+/* ---------------------------- Styling accent2 colour swatch ---------------------------- */
+.c-colorswatch-accent2{
+  height: 60px;
+  width: 100%;
+  background-color: var(--clr-accent2);
+}
+
+/* ---------------------------- Styling accent3 colour swatch ---------------------------- */
+.c-colorswatch-accent3{
+  height: 60px;
+  width: 100%;
+  background-color: var(--clr-accent3);
+}
+
+/* ---------------------------- media quaries - desktop specific ---------------------------- */
+@media (min-width: 768px) {
+  /* ---------------------------- Hiding Toggle icon from desktop ---------------------------- */
+  .c-topnav a.icon {
+      display: none;
+  }
+
+  /* ---------------------------- Showing Top menu for desktop ---------------------------- */
+  .menu--desktop {
+      display: block;
+  }
+
+  /* ---------------------------- Styling topnav menu item for desktop ---------------------------- */
+  .menu--desktop a {
+      max-width: 200px;
+      float: left;
+      display: inline;
+      font-weight: 400;
+  }
+
+  /* ---------------------------- Setting Logo stays on left ---------------------------- */
+  .logo {
+      float: left;
+      font-weight: 400;
+  }
+  
+  /* ---------------------------- Showing sidenav on desktop ---------------------------- */
+  .navigation, .sidenav--desktop{
+      display:block;
+  }
+
+  /* Content Page */
+  
+  /* ---------------------------- Removing floats ---------------------------- */
+  section{
+      clear: both;
+  }
+
+  /* ------------------------- Setting main content to take 80% space rest 20% set for sidenav ------------------------- */
+.content {
+  width: 80%;
+  /* float: left; */
+  /* min-height: 1000px; */
+  margin-left: 20%;
+}
+
+/* ------------------------- Styling column for destop ------------------------- */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* ------------------------- Defining column Width ------------------------- */
+.column-33 {
+  width: 33.33%;
+}
+
+  .column-20 {
+  width: 20%;
+}
+
+.column-25 {
+  width: 25%;
+}
+
+.column-60 {
+  width: 60%;
+}
+
+  /* ------------------------- Removing floats ------------------------- */
+section {
+  clear: both;
+}
+  /* ---------------------------- Styling Styling sidenav Items ---------------------------- */
+  .nav__option {
+      padding-bottom: 5px;
+      font-weight: 500;
+  }
+
+  /* ---------------------------- Styling Nav item active colour ---------------------------- */
+  .nav__option .nav__option--active{
+      color: var(--clr-accent1);
+  }
+}
+.menu__tab .nav__option--active {
+color: var(--clr-accent1);
 }
