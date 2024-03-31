@@ -29,7 +29,7 @@
                 <li class="menu__tab"><a href="coming soon.html">Services</a></li>
                 <li class="menu__tab"><a href="coming soon.html">About us</a></li>
                 <li class="menu__tab"><a href="coming soon.html">Contact us</a></li>
-                <li class="menu__tab2"><a href="#">000-000-000</a></li>
+                <li class="menu__tab2"><a href="#" class="button">000-000-000</a></li>
               </ul>
             </div>
         </nav>
@@ -41,9 +41,37 @@
             <li class="menu__tab"><a href="coming soon.html">Services</a></li>
             <li class="menu__tab"><a href="coming soon.html">About us</a></li>
             <li class="menu__tab"><a href="coming soon.html">Contact us</a></li>
-            <a href="#">000-000-000</a>
+            <a href="#" class="button">000-000-000</a>
         </ul>
-      </nav>    
+      </nav>  
+      <a class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>  
     </div>
+
+    <!-- main content -->
+
+    <!-- Section 1 -->
+    <div class="c-hero l-section">
+      <div class="c-hero-container">
+        <h2 class="u-font-size-48">Outback Nursery</h2>
+        <p class="u-font-size-24 l-pb2">Your source for Quality plants</p>
+        <a href="#" class="button">Contact Us</a>
+      </div>
+  </div>  
+  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+  <!-- javascript files -->
+  <script type="text/javascript" scr="design-system.js"></script>
 </body>
 </html>

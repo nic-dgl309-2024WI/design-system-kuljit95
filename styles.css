@@ -29,6 +29,12 @@
 /* -------------------------------- Line Height ------------------------------- */
     --lineheight-md: 1.5;
 
+    --btn-shd: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
+
+	--btn-pd: 15px 25px;
+	--btn-rd: 5px;
+
+
   --spacing: 1rem;
 	--spacing2: 2rem;
 	--spacing-0: 0px; 
@@ -215,21 +221,21 @@ li {
 
 /* Apply margin to all four sides */
 .l-m {
-  margin: 1rem;
+  margin: var(--spacing);
 }
 /* Apply margin to Top */
 .l-mt {
-    margin-top: 1rem;
+  margin-top: var(--spacing);
   }
 
   /* Apply margin to Bottom */
 .l-mb {
-    margin-bottom: 1rem;
+  margin-bottom: var(--spacing);
   }
 
   /* Apply margin to Right */
 .l-mr {
-    margin-right: 1rem;
+  margin-right: var(--spacing);
   }
 
   /* To set content center */
@@ -240,57 +246,61 @@ li {
 
   /* Apply margin to Left */
 .l-ml {
-    margin-left: 1rem;
+  margin-left: var(--spacing);
   }
   
   /* Apply margin Horizontally Both to Left and Right side */
   .l-mx {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: var(--spacing);
+	margin-right: var(--spacing);
   }
   
   /* Apply margin Verticaly to Top and Bottom */
   .l-my {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: var(--spacing);
+	margin-bottom: var(--spacing);
   }
 /* Padding */
 
 /* Apply Padding to all four sides */
 .l-p {
-    padding: 1rem;
+  padding: var(--spacing);
   }
   
   /* Apply padding to Top */
   .l-pt {
-    padding-top: 1rem;
+    padding-top: var(--spacing);
   }
   
   /* Apply padding to Bottom */
   .l-pb {
-    padding-bottom: 1rem;
+    padding-bottom: var(--spacing);
   }
   
+  .l-pb2 {
+    padding-bottom: var(--spacing2);
+  }
+
   /* Apply padding to Right */
   .l-pr {
-    padding-right: 1rem;
+    padding-right: var(--spacing);
   }
   
   /* Apply padding to Left */
   .l-pl {
-    padding-left: 1rem;
+    padding-left: var(--spacing);
   }
   
   /* Apply padding Horizontally Both to Left and Right side */
   .l-px {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: var(--spacing);
+	padding-right: var(--spacing);
   }
   
   /* Apply padding Verticaly to Top and Bottom */
   .l-py {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: var(--spacing);
+	padding-bottom: var(--spacing);
   }  
 
   /* To set side bar sticky */
@@ -424,11 +434,13 @@ li {
 /* ----------------------- Set all nav menu List float right for desktop  ----------------------- */
 nav .menu.menu--desktop li {
   float: right;
+  padding-right: var(--spacing-10);
 }
 /* ------------------------- Set Background color of top nav ------------------------- */
 .c-topnav {
 overflow: hidden;
 background-color: var(--clr-light);
+padding: var(--spacing-10);
 }
 
 /* ---------------------------- Hiding top nav on mobile ---------------------------- */
@@ -438,16 +450,16 @@ background-color: var(--clr-light);
 
 /* ---------------------------- styling top nav ---------------------------- */
 .c-topnav a {
-  padding: 10px;
+  padding: var(--spacing-10);
   text-decoration: none;
   font-size: var(--font-size-16);
+  text-transform: uppercase;
   display: block;
   color: var(--clr-primary);
 }
 
 /* ---------------------------- Displaying menu toggle icon for mobile menu  ---------------------------- */
 .c-topnav a.icon {
-  display: block;
   position: absolute;
   right: 0;
   top: 0;
@@ -697,3 +709,40 @@ section {
 .menu__tab .nav__option--active {
 color: var(--clr-accent1);
 }
+
+
+/* ------------------------- START: homepage design css  ------------------------- */
+
+/* ------------------------- Styling button for homepage  ------------------------- */
+.button {
+	background-color: var(--clr-accent3);
+	Padding: var(--btn-pd);
+	font-family: var(--font-primary);
+	font-size: 14px;
+	border-radius: var(--btn-rd);
+	color: var(--clr-white) !important;
+	cursor: pointer;
+	font-weight: var(--font-weight-medium);
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	transition: background-color 2s ease;
+	border: none;
+}
+
+.button:hover {
+	background-color: var(--clr-accent3t) !important;
+	box-shadow: var(--btn-shd);
+}
+
+/* ------------------------- Styling First Section ------------------------- */
+.c-hero-container {
+	text-align: center;
+}
+
+.l-section.c-hero {
+	background-image: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(images/hero-image.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
