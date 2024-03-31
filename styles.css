@@ -746,3 +746,44 @@ color: var(--clr-accent1);
 	background-attachment: fixed;
 }
 
+/* ------------------------- Styling Second Section ------------------------- */
+section {
+	padding: 5%;
+}
+.l-section {
+	padding: 12% 5%;
+}
+.l-each-section {
+	padding: 80px 40px 60px 40px;
+}
+
+.all-center {
+	text-align: center;
+}
+
+.c-flex__container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.c-flex__item {
+	width: 100%;
+	margin-bottom: var(--spacing-20);
+	background-color: #f2f2f2;
+	padding: var(--spacing-10);
+	box-sizing: border-box;
+	border-radius: var(--btn-rd);
+}
+
+.c-flex__item img {
+	max-width: 100%;
+	height: auto;
+	border-radius: var(--btn-rd);
+}
+
+.c-flex__item p,
+h3 {
+	color: var(--clr-accent2);
+}
+
