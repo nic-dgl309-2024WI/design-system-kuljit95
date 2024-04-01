@@ -843,3 +843,23 @@ h3 {
 	height: auto;
 }
 
+
+
+/* ------------------------- Desktop responsiveness ------------------------- */
+
+@media (min-width: 768px) {
+	.c-flex__item {
+		width: calc(25% - 20px);
+	}
+
+	.third-section .l-left-column {
+		width: 40%;
+	}
+	
+	.third-section .l-right-column {
+		width: 60%;
+	}
+	.c-flex__item-3 {
+		width: calc(33.33% - 20px);
+	}
+}
