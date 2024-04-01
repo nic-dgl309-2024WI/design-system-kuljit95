@@ -887,7 +887,55 @@ h3 {
 	width: 100%;
 }
 
+/* ------------------------- Styling Sixth Section ------------------------- */
+.c-carousel {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin: var(--spacing-20) auto;
+}
 
+.c-carousel-inner {
+	display: flex;
+	transition: transform 0.5s ease;
+}
+.c-testimonial {
+	flex: 0 0 100%;
+	padding: var(--spacing-20);
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.c-testimonial img{
+	width: 70px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px #0000007a;
+}
+
+.btn {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	padding: var(--spacing-10);
+	z-index: 1;
+	font-size: 18px;
+	line-height: 10px;
+	border-radius: var(--spacing-20);
+}
+
+.prev {
+	left: 0;
+}
+
+.next {
+	right: 0;
+}
+
+/* ------------------------- Styling Seventh Section ------------------------- */
 .l-newsletter-section {
 	background-color: #f2f2f2;
 }
@@ -985,6 +1033,19 @@ h3 {
 		width: 50%;
 	}
 
+  .c-testimonial {
+		flex: 0 0 33.33%;
+	}
+
+	.c-testimonial-section{
+		width: 1000px;
+		margin: auto;
+	}
+
+	.c-testimonial2-section{
+		width: 900px;
+		margin: auto;
+	}
   .c-newsletter-input {
 		width: 472px;
 	}

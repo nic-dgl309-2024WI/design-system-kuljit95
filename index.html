@@ -167,6 +167,50 @@
 </div>  
 </div>
 
+<!-- Section 6 --> 
+<div class="c-testimonial-section l-each-section">
+  <h2 class="u-font-size-36 u-text-primary all-center">testimonials</h2>
+          <p class="all-center l-pb2">Discover What Our Customers Have to Say About Their Nursery Experience.</p>
+  <div class="c-carousel">
+          <button class="btn prev" onclick="prevtestimonial()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button> 
+          <div class="c-carousel-inner">
+              <div class="c-testimonial">
+              <img src="images\f2.jpg"  >
+              <h3>Kuljit</h3>
+              <p>"Outback Nursery helped me transform my garden into a lush paradise. Their plants are top-notch quality!"</p>
+              </div>
+              <div class="c-testimonial">
+                  <img src="images\f2.jpg"  >
+                  <h3>Megan</h3>
+                  <p>"I'm impressed by the variety of plants available at Outback Nursery. Their customer service is exceptional too!"</p>
+              </div>
+              <div class="c-testimonial">
+                      <img src="images\f2.jpg"  >
+                      <h3>Ravinder</h3>
+                      <p>"Outback Nursery exceeded my expectations. Their knowledgeable staff guided me in selecting the perfect plants for my space."</p>
+              </div>
+            <!-- Duplicate the c-testimonials to create a loop -->
+              <div class="c-testimonial">
+              <img src="images\f2.jpg"  >
+              <h3>Kuljit</h3>
+              <p>"Outback Nursery helped me transform my garden into a lush paradise. Their plants are top-notch quality!"</p>
+              </div>
+              <div class="c-testimonial">
+                  <img src="images\f2.jpg"  >
+                  <h3>Megan</h3>
+                  <p>"I'm impressed by the variety of plants available at Outback Nursery. Their customer service is exceptional too!"</p>
+              </div>
+              <div class="c-testimonial">
+                      <img src="images\f2.jpg"  >
+                      <h3>Ravinder</h3>
+                      <p>"Outback Nursery exceeded my expectations. Their knowledgeable staff guided me in selecting the perfect plants for my space."</p>
+              </div>
+          </div>
+          <button class="btn next" onclick="nexttestimonial()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+        </div>
+  </div>
+
+  <!-- Section 7 --> 
 <div class="l-newsletter-section l-each-section ">
   <h2 class="u-font-size-36 u-text-primary all-center">Book a tour</h2>
   <p class="all-center l-pb2">Explore Our Green Oasis - Book Your Nursery Tour Today!</p>
@@ -175,6 +219,8 @@
       <button class="button" type="submit">submit</button>
   </form>
 </div>
+
+
 <!-- Section 8 --> 
 <footer class="c-footer l-flex">
   <div class="c-footer-column c-footer-logo">
@@ -189,19 +235,60 @@
       <a href="#" ><i class="fa fa-twitter-square" aria-hidden="true"></i></a> 
   </div>
 </footer>
+<script>
+function myFunction() {
+  var x = document.getElementById("links");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 
-  <script>
-    function myFunction() {
-      var x = document.getElementById("links");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-  </script>
+
+// JavaScript for carousel functionality
+const carouselInner = document.querySelector('.c-carousel-inner');
+const testimonials = document.querySelectorAll('.c-testimonial');
+const testimonialWidth = testimonials[0].offsetWidth;
+let index = 0;
+
+function slideTestimonials() {
+  carouselInner.style.transition = 'transform 0.5s ease';
+  carouselInner.style.transform = `translateX(${-testimonialWidth * index}px)`;
+}
+
+function nexttestimonial() {
+  if (index >= testimonials.length / 2) {
+    index = 0;
+    carouselInner.style.transition = 'none';
+    carouselInner.style.transform = `translateX(0)`;
+    setTimeout(() => {
+      index++;
+      slideTestimonials();
+    }, 50);
+  } else {
+    index++;
+    slideTestimonials();
+  }
+}
+
+function prevtestimonial() {
+  if (index <= 0) {
+    index = testimonials.length / 2;
+    carouselInner.style.transition = 'none';
+    carouselInner.style.transform = `translateX(-${testimonialWidth * (testimonials.length / 2)}px)`;
+    setTimeout(() => {
+      index--;
+      slideTestimonials();
+    }, 50);
+  } else {
+    index--;
+    slideTestimonials();
+  }
+}
+</script>
 
   <!-- javascript files -->
-  <script type="text/javascript" scr="design-system.js"></script>
+  <script type="text/javascript" scr="main.js"></script>
 </body>
 </html>
