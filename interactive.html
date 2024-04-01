@@ -11,7 +11,6 @@
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-
   </head>
   <body>
     <div class="c-topnav sticky-header">
@@ -43,7 +42,7 @@
         <ul class="sidenav sidenav--mobile ">
           <h3 class="nav__option nav__option--bold">Branding</h3>
           <li class="nav__option">
-            <a href="colours.html">01 Colours</a>
+            <a href="colors.html">01 Colours</a>
           </li>
           <li class="nav__option">
               <a href="typography.html">02 Typography</a>
@@ -55,13 +54,13 @@
           <li class="nav__option"><a href="spacing.html">04 Spacing</a>
           </li>
           <li class="nav__option">
-              <a  href="containers.html">05 Containers</a>
+              <a href="containers.html">05 Containers</a>
           </li>
           <li class="nav__option">
-              <a class="nav__option--active" href="Images.html">06 Images</a>
+              <a href="Images.html">06 Images</a>
           </li>
-          <li class="nav__option">
-              <a href="interactive.html">07 Interactive</a>
+          <li class="nav__option"> 
+              <a class="nav__option--active" href="Interactive.html">07 Interactive</a>
           </li>
           <li class="nav__option">
               <a href="#">08 Feedback</a>
@@ -114,7 +113,7 @@
             <ul class="sidenav sidenav--desktop sticky-sidebar">
                 <h3 class="nav__option nav__option--bold">Branding</h3>
                 <li class="nav__option">
-                    <a href="colours.html">
+                    <a href="colors.html">
                         <span>01</span> Colours </a>
                 </li>
                 <li class="nav__option">
@@ -135,11 +134,11 @@
                         <span>05</span> Containers </a>
                 </li>
                 <li class="nav__option">
-                        <a class="nav__option--active" href="images.html">
+                    <a href="images.html">
                         <span>06</span> Images </a>
                 </li>
                 <li class="nav__option">
-                    <a href="interactive.html">
+                        <a class="nav__option--active" href="interactive.html">
                         <span>07</span> Interactive </a>
                 </li>
                 <li class="nav__option">
@@ -199,68 +198,156 @@
     <!-- main content -->
     <div class="content">
       <div class="page">
-            <h1 class="title l-pb">06 Images</h1>
-            <div class="c-image-grid">
-                    <img src="images\f2.jpg" >
-                    <img src="images\Kuljit portrait.jpg" >
-                    <img src="images\about-us.jpg" >
-                    <img src="images\Ceder-Emerald.jpg">
-                    <img src="images\CEDRUS--Weeping-blue-atlas.jpg" >
-                    <img src="images\CHAMAECYPARIS-Nootkatensis-Pendula.jpg" >
-                    <img src="images\CRYPTOMERIA-Little-Diamond.jpg" >
-                    <img src="images\cta.jpg" >
-                    <img src="images\CYPRESS-Wilma.jpg" >
-                    <img src="images\FIR-Dwarf-Balsam.jpg" >
-                    <img src="images\GIFTS-AND-CERTIFICATES.jpg" >
-                    <img src="images\Hemlock-Mountain-Hemlock.jpg" >
-                    <img src="images\hero-image.jpg" >
-                    <img src="images\JUNIPER-BlueArrow.jpg" >
-                    <img src="images\ORDER---DELIVERY.jpg" >
-                    <img src="images\PROMOTIONAL-OFFERS.jpg" >
-                  </div>   
+            <h1 class="title l-pb">07 Interactive</h1>
 
-                  
+            <div class="c-int-element l-pb">
+            <!-- Text Input Field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+
+            <div class="c-int-element l-pb">
+            <!-- Checkbox -->
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Subscribe to newsletter</label>
+             </div>  
+
+            <div class="c-int-element l-pb">
+            <!-- Radio Buttons -->
+            <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            </fieldset>
+            </div>
+
+            <div class="c-int-element l-pb">
+            <!-- Select Dropdown -->
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+            </select>
+            </div>
+
+            <div class="c-int-element l-pb">
+            <!-- Button -->
+            <button class="button" type="button" onclick="submitForm()">Submit</button>
+            </div>
+
+            <div class="c-int-element l-pb">
+            <p>In this example:</p>
+            <p>1. There's a text input field for entering a name.</p>
+            <p>2. A checkbox for subscribing to a newsletter.</p>
+            <p>3. Radio buttons for selecting gender.</p>
+            <p>4. A select dropdown for selecting a country.</p>
+            <p>5. A button for submitting the form, which triggers the submitForm() JavaScript function when clicked. The function currently displays an alert, but you can modify it to perform other actions like sending form data to a server.</p>
+            </div>
+
 <pre><code>
-<h3 class="title l-pb">Html</h3>
-    &lt;img src=&quot;images\f2.jpg&quot; &gt;
-    &lt;img src=&quot;images\Kuljit portrait.jpg&quot; &gt;
-    &lt;img src=&quot;images\about-us.jpg&quot; &gt;
-    &lt;img src=&quot;images\Ceder-Emerald.jpg&quot; &quot;&gt;
-    &lt;img src=&quot;images\CEDRUS--Weeping-blue-atlas.jpg&quot; &gt;
-    &lt;img src=&quot;images\CHAMAECYPARIS-Nootkatensis-Pendula.jpg&quot; &gt;
-    &lt;img src=&quot;images\CRYPTOMERIA-Little-Diamond.jpg&quot; &gt;
-    &lt;img src=&quot;images\cta.jpg&quot; &gt;
-    &lt;img src=&quot;images\CYPRESS-Wilma.jpg&quot; &gt;
-    &lt;img src=&quot;images\FIR-Dwarf-Balsam.jpg&quot; &gt;
-    &lt;img src=&quot;images\GIFTS-AND-CERTIFICATES.jpg&quot; &gt;
-    &lt;img src=&quot;images\Hemlock-Mountain-Hemlock.jpg&quot; &gt;
-    &lt;img src=&quot;images\hero-image.jpg&quot; &gt;
-    &lt;img src=&quot;images\JUNIPER-BlueArrow.jpg&quot; &gt;
-    &lt;img src=&quot;images\ORDER---DELIVERY.jpg&quot; &gt;
-    &lt;img src=&quot;images\PROMOTIONAL-OFFERS.jpg&quot; &gt;
-&lt;/div&gt; 
-</pre></code>
+<h3 class="title l-pb">html</h3>
+&lt;!-- Text Input Field --&gt;
+&lt;div class=&quot;c-int-element l-pb&quot;&gt;
+&lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot; placeholder=&quot;Enter your name&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- Checkbox --&gt;
+&lt;div class=&quot;c-int-element l-pb&quot;&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;subscribe&quot; name=&quot;subscribe&quot;&gt;
+&lt;label for=&quot;subscribe&quot;&gt;Subscribe to newsletter&lt;/label&gt;
+&lt;/div&gt;  
+
+&lt;!-- Radio Buttons --&gt;
+&lt;div class=&quot;c-int-element l-pb&quot;&gt;
+&lt;fieldset&gt;
+&lt;legend&gt;Gender:&lt;/legend&gt;
+&lt;input type=&quot;radio&quot; id=&quot;male&quot; name=&quot;gender&quot; value=&quot;male&quot;&gt;
+&lt;label for=&quot;male&quot;&gt;Male&lt;/label&gt;&lt;br&gt;
+&lt;input type=&quot;radio&quot; id=&quot;female&quot; name=&quot;gender&quot; value=&quot;female&quot;&gt;
+&lt;label for=&quot;female&quot;&gt;Female&lt;/label&gt;&lt;br&gt;
+&lt;input type=&quot;radio&quot; id=&quot;other&quot; name=&quot;gender&quot; value=&quot;other&quot;&gt;
+&lt;label for=&quot;other&quot;&gt;Other&lt;/label&gt;
+&lt;/fieldset&gt;
+&lt;/div&gt;
+
+&lt;!-- Select Dropdown --&gt;
+&lt;div class=&quot;c-int-element l-pb&quot;&gt;
+&lt;label for=&quot;country&quot;&gt;Country:&lt;/label&gt;
+&lt;select id=&quot;country&quot; name=&quot;country&quot;&gt;
+&lt;option value=&quot;usa&quot;&gt;USA&lt;/option&gt;
+&lt;option value=&quot;canada&quot;&gt;Canada&lt;/option&gt;
+&lt;option value=&quot;uk&quot;&gt;UK&lt;/option&gt;
+&lt;option value=&quot;australia&quot;&gt;Australia&lt;/option&gt;
+&lt;/select&gt;
+&lt;/div&gt;
+
+&lt;!-- Button --&gt;
+&lt;div class=&quot;c-int-element l-pb&quot;&gt;
+&lt;button class=&quot;button&quot; type=&quot;button&quot; onclick=&quot;submitForm()&quot;&gt;Submit&lt;/button&gt;
+&lt;/div&gt;
+</pre></code>   
 
 <pre><code>
 <h3 class="title l-pb">CSS</h3>
-.c-image-grid {
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-grid-gap: 20px;
+.c-int-element input[type="email"],
+.c-int-element input[type="text"],
+.c-int-element textarea, select, fieldset {
+    width: 100%;
+    padding: var(--spacing-10);
+    margin-bottom: var(--spacing-10);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
-.c-image-grid img {
-width: 100%;
-height: auto;
-display: block;
-border-radius: 5px;
-border: 1px solid #f2f2f2;
+.c-int-element input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    width: 100%;
 }
-</pre></code>
-    </div>
+
+.button {
+	background-color: var(--clr-accent3);
+	Padding: var(--btn-pd);
+	font-family: var(--font-primary);
+	font-size: 14px;
+	border-radius: var(--btn-rd);
+	color: var(--clr-white) !important;
+	cursor: pointer;
+	font-weight: var(--font-weight-medium);
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	transition: background-color 2s ease;
+	border: none;
+}
+
+.button:hover {
+	background-color: var(--clr-accent3t) !important;
+	box-shadow: var(--btn-shd);
+}
+</pre></code>   
+    
+        </div>
     </div>
 
-    <!-- javascript files -->
-    <script type="text/javascript" src="main.js"></script>
+<script>
+    function submitForm() {
+        // JavaScript function to handle form submission
+        alert('Form submitted!');
+        // You can add further actions here, like sending data to a server
+    }
+    </script> 
+
+     <!-- javascript files -->
+     <script type="text/javascript" src="main.js"></script>
+ 
   </body>
 </html>

@@ -1024,6 +1024,24 @@ code h3 {
   padding-top: 0px;
 }
 
+/* ------------------------- Interactive Page design css  ------------------------- */
+.c-int-element input[type="email"],
+.c-int-element input[type="text"],
+.c-int-element textarea, select, fieldset {
+	width: 100%;
+	padding: var(--spacing-10);
+	margin-bottom: var(--spacing-10);
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.c-int-element input[type="submit"] {
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
 
 /* ------------------------- Desktop responsiveness ------------------------- */
 
