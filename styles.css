@@ -843,6 +843,51 @@ h3 {
 	height: auto;
 }
 
+/* ------------------------- Styling Forth Section ------------------------- */
+.fourth-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: var(--spacing-40);
+	width: 100%;
+	margin: auto;
+}
+
+.fourth-bg {
+	background-color: #f2f2f2;
+
+}
+
+.fourth-section .l-left-column {
+	width: 100%;
+	padding: var(--spacing-20);
+	box-sizing: border-box;
+}
+
+.fourth-section .l-right-column {
+	width: 100%;
+	padding: var(--spacing-20);
+	box-sizing: border-box;
+	margin: auto;
+}
+
+.fourth-section input[type="email"],
+.fourth-section input[type="text"],
+.fourth-section textarea {
+	width: 100%;
+	padding: var(--spacing-10);
+	margin-bottom: var(--spacing-10);
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.fourth-section input[type="submit"] {
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
 
 
 /* ------------------------- Desktop responsiveness ------------------------- */
@@ -862,4 +907,24 @@ h3 {
 	.c-flex__item-3 {
 		width: calc(33.33% - 20px);
 	}
+
+	.fourth-section{
+		width: 80%;
+	}
+
+	.fourth-section-n {
+		width: 100% !important;
+	}
+	
+	.fourth-section .l-left-column {
+		width: 45%;
+		/* Adjust as needed */
+		padding: var(--spacing-20);
+		box-sizing: border-box;
+	}
+	
+	.fourth-section .l-right-column {
+		width: 50%;
+	}
+
 }
