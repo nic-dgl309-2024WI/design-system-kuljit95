@@ -1,11 +1,14 @@
 :root {
-    --clr-primary: #333333;
-    --clr-secondry:#A01313;
-    --clr-light: #eeeeee;
-    --clr-white: #ffffff;
-    --clr-accent1:#002AE6;
-    --clr-accent2: #293C98;
-    --clr-accent3: #5E1386;
+  --clr-primary: #333333;
+	--clr-secondary: #A01313;
+	--clr-light: #eeeeee;
+	--clr-light2: #f2f2f2;
+	--clr-white: #ffffff;
+	--clr-grey: #999999;
+	--clr-accent1: #002AE6;
+	--clr-accent2: #293C98;
+	--clr-accent3: #5E1386;
+	--clr-accent3t: #5e1386ad;
 /* ----------------------------------- font families ---------------------------------- */
     --font-primary: "Roboto", sans-serif;
     --font-secondary: "PT Serif", sans-serif;
@@ -994,6 +997,32 @@ h3 {
 	font-size: 30px;
 }
 
+/* ------------------------- Images Page design css  ------------------------- */
+.c-image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.c-image-grid img {
+  width: 100%;
+  height: auto;
+display: block;
+border-radius: 5px;
+border: 1px solid var(--clr-light2);
+}
+
+code {
+background-color:  var(--clr-light2);
+border: 1px solid var(--clr-grey);
+display: block;
+padding: 20px 20px 40px 20px;
+border-radius: 5px;
+text-wrap: balance;
+}
+code h3 {
+  padding-top: 0px;
+}
 
 
 /* ------------------------- Desktop responsiveness ------------------------- */
