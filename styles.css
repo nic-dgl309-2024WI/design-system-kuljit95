@@ -818,7 +818,6 @@ h3 {
 
 .third-section .l-left-column {
 	width: 100%;
-	/* Adjust as needed */
 	background-image: url('images/about-us.jpg');
 	background-size: cover;
 	background-position: center;
@@ -918,6 +917,34 @@ h3 {
 	width:100%;
 }
 
+/* ------------------------- Styling Footer Section ------------------------- */
+.c-footer {
+	background-color: #333;
+	color: #fff;
+	padding: var(--spacing-20);
+	text-align: center;
+	font-size: 14px;
+}
+
+
+.c-footer-column {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.c-footer-social a {
+	color: #fff;
+	margin-left: var(--spacing-10);
+}
+.l-white-icons i{
+	color: #ffffff; 
+	font-size: var(--spacing-20);
+}
+.l-purple-icons i{
+	color: #5e1386; 
+	font-size: 30px;
+}
 
 
 
@@ -963,6 +990,21 @@ h3 {
 	}
 	.c-newsletter-form button {
 		width: initial;
+	}
+  .c-footer-column{
+		width: 33.33%;
+	}
+		
+	.c-footer-logo {
+		text-align: left;
+	}
+
+	.c-footer-copyright {
+		text-align: center;
+	}
+
+	.c-footer-social {
+		text-align: right;
 	}
 
 }
