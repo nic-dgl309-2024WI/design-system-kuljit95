@@ -1099,6 +1099,18 @@ ul.breadcrumb {
 	background-color:var(--clr-light);
 }
 
+/* ------------------------- Hero Page design css  ------------------------- */
+
+.c-hero-n-container {
+	text-align: center;
+	color: var(--clr-white)
+}
+
+.l-section.c-hero-n {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(Images/hero-image.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
 
 /* ------------------------- Desktop responsiveness ------------------------- */
 
