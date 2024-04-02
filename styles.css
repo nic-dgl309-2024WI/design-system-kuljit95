@@ -12,6 +12,7 @@
 /* ----------------------------------- font families ---------------------------------- */
     --font-primary: "Roboto", sans-serif;
     --font-secondary: "PT Serif", sans-serif;
+	--font-third: "montserrat";
 
 /* --------------------------------- font size ------------------------------- */    
     --font-size-48: 48px;
@@ -73,8 +74,9 @@ h5 {
 }
 
 h3 {
-    padding-bottom:10px;
-    padding-top:20px;
+	font-size: var(--font-size-16);
+	padding-bottom: var(--spacing-10);
+	padding-top: var(--spacing-20);
 }
 * {
     box-sizing: border-box;
@@ -146,7 +148,7 @@ li {
 	background-color: var(--clr-accent3);
 }
 
-/* -------------------font family -------------------*/
+/* font family */
 .u-font-primary {
 	font-family: var(--font-primary) !important;
 }
@@ -229,87 +231,85 @@ li {
 
 /* Apply margin to all four sides */
 .l-m {
-  margin: var(--spacing);
+	margin: var(--spacing);
 }
+
 /* Apply margin to Top */
 .l-mt {
-  margin-top: var(--spacing);
-  }
+	margin-top: var(--spacing);
+}
 
-  /* Apply margin to Bottom */
+/* Apply margin to Bottom */
 .l-mb {
-  margin-bottom: var(--spacing);
-  }
-
-  /* Apply margin to Right */
-.l-mr {
-  margin-right: var(--spacing);
-  }
-
-  /* To set content center */
-.center-content {
-    display: flex;
-    align-items: center;
-  }
-
-  /* Apply margin to Left */
-.l-ml {
-  margin-left: var(--spacing);
-  }
-  
-  /* Apply margin Horizontally Both to Left and Right side */
-  .l-mx {
-    margin-left: var(--spacing);
-	margin-right: var(--spacing);
-  }
-  
-  /* Apply margin Verticaly to Top and Bottom */
-  .l-my {
-    margin-top: var(--spacing);
 	margin-bottom: var(--spacing);
-  }
+}
+
+/* Apply margin to Right */
+.l-mr {
+	margin-right: var(--spacing);
+}
+
+/* Apply margin to Left */
+.l-ml {
+	margin-left: var(--spacing);
+}
+
+/* Apply margin Horizontally Both to Left and Right side */
+.l-mx {
+	margin-left: var(--spacing);
+	margin-right: var(--spacing);
+}
+
+/* Apply margin Verticaly to Top and Bottom */
+.l-my {
+	margin-top: var(--spacing);
+	margin-bottom: var(--spacing);
+}
+
+
 /* Padding */
 
 /* Apply Padding to all four sides */
 .l-p {
-  padding: var(--spacing);
-  }
-  
-  /* Apply padding to Top */
-  .l-pt {
-    padding-top: var(--spacing);
-  }
-  
-  /* Apply padding to Bottom */
-  .l-pb {
-    padding-bottom: var(--spacing);
-  }
-  
-  .l-pb2 {
-    padding-bottom: var(--spacing2);
-  }
+	padding: var(--spacing);
+}
 
-  /* Apply padding to Right */
-  .l-pr {
-    padding-right: var(--spacing);
-  }
-  
-  /* Apply padding to Left */
-  .l-pl {
-    padding-left: var(--spacing);
-  }
-  
-  /* Apply padding Horizontally Both to Left and Right side */
-  .l-px {
-    padding-left: var(--spacing);
-	padding-right: var(--spacing);
-  }
-  
-  /* Apply padding Verticaly to Top and Bottom */
-  .l-py {
-    padding-top: var(--spacing);
+/* Apply padding to Top */
+.l-pt {
+	padding-top: var(--spacing);
+}
+
+/* Apply padding to Bottom */
+.l-pb {
 	padding-bottom: var(--spacing);
-  }  
+}
+
+.l-pb2 {
+	padding-bottom: var(--spacing2);
+}
+
+/* Apply padding to Right */
+.l-pr {
+	padding-right: var(--spacing);
+}
+
+/* Apply padding to Left */
+.l-pl {
+	padding-left: var(--spacing);
+}
+
+/* Apply padding Horizontally Both to Left and Right side */
+.l-px {
+	padding-left: var(--spacing);
+	padding-right: var(--spacing);
+}
+
+/* Apply padding Verticaly to Top and Bottom */
+.l-py {
+	padding-top: var(--spacing);
+	padding-bottom: var(--spacing);
+}
+
 
 
   /* To set side bar sticky */
@@ -434,7 +434,7 @@ li {
 
 
 
-/* -----------------*/
+/* ------------------------- Design Css Starts ------------------------- */
 /* ---------------------------- Logo width described ---------------------------- */
 .logo {
   width: 20%;
