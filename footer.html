@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <!-- stylesheet files -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+  </head>
+  <body>
+    <div class="c-topnav sticky-header">
+      <!-- top navigation for desktop -->
+      <nav class="nav">
+        <div class="logo">
+          <a href="index.html">Logo</a>
+        </div>
+        <ul class="menu menu--desktop">
+          <li class="menu__tab  ">
+            <a href="about-me.html">About Me</a>
+          </li>
+          <li class="menu__tab">
+            <a href="index.html">Demo Site</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- top navigation for mobile -->
+      <nav class="mobile-nav" id='links'>
+        <ul class="menu menu--mobile">
+          <li class="menu__tab  ">
+            <a href="about-me.html">About Me</a>
+          </li>
+          <li class="menu__tab">
+            <a href="index.html">Demo Site</a>
+          </li>
+        </ul>
+        <ul class="sidenav sidenav--mobile ">
+          <h3 class="nav__option nav__option--bold">Branding</h3>
+          <li class="nav__option">
+            <a href="colors.html">01 Colours</a>
+          </li>
+          <li class="nav__option">
+              <a href="typography.html">02 Typography</a>
+          </li>
+          <li class="nav__option">
+              <a href="#">03 Logo</a>
+          </li>
+          <h3 class="nav__option nav__option--bold">Utilities</h3>
+          <li class="nav__option"><a href="spacing.html">04 Spacing</a>
+          </li>
+          <li class="nav__option">
+              <a href="containers.html">05 Containers</a>
+          </li>
+          <li class="nav__option">
+              <a href="images.html">06 Images</a>
+          </li>
+          <li class="nav__option">
+              <a href="interactive.html">07 Interactive</a>
+          </li>
+          <li class="nav__option">
+              <a href="#">08 Feedback</a>
+          </li>
+          <h3 class="nav__option nav__option--bold">Navigation</h3>
+          <li class="nav__option">
+              <a href="#">09 Navbars</a>
+          </li>
+          <li class="nav__option">
+              <a href="breadcrumbs.html">10 Breadcrumbs</a>
+          </li>
+          <li class="nav__option">
+              <a href="pagination.html">11 Pagination</a>
+          </li>
+          <h3 class="nav__option nav__option--bold">Blocks</h3>
+          <li class="nav__option">
+              <a href="hero.html">12 Hero</a>
+          </li>
+          <li class="nav__option">
+              <a href="#">13 Carousel</a>
+          </li>
+          <li class="nav__option">
+              <a href="#">14 Slats</a>
+          </li>
+          <li class="nav__option">
+                <a class="nav__option--active" href="footer.html">15 Footer</a>
+          </li>
+          <h3 class="nav__option nav__option--bold">Components</h3>
+          <li class="nav__option">
+              <a href="#">16 Cards</a>
+          </li>
+          <li class="nav__option">
+              <a href="#">17 Forms</a>
+          </li>
+          <li class="nav__option">
+              <a href="#">18 Accordion</a>
+          </li>
+          <li class="nav__option">
+              <a href="#">19 Lists</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <!-- sidebar -->
+    <aside class="navigation">
+            <ul class="sidenav sidenav--desktop sticky-sidebar">
+                <h3 class="nav__option nav__option--bold">Branding</h3>
+                <li class="nav__option">
+                    <a href="colors.html">
+                        <span>01</span> Colours </a>
+                </li>
+                <li class="nav__option">
+                    <a class="nav__option" href="typography.html">
+                        <span>02</span> Typography </a>
+                </li>
+                <li class="nav__option">
+                    <a href="#">
+                        <span>03</span> Logo </a>
+                </li>
+                <h3 class="nav__option nav__option--bold">Utilities</h3>
+                <li class="nav__option">
+                    <a href="spacing.html">
+                        <span>04</span> Spacing </a>
+                </li>
+                <li class="nav__option">
+                    <a href="containers.html">
+                        <span>05</span> Containers </a>
+                </li>
+                <li class="nav__option">
+                    <a href="images.html">
+                        <span>06</span> Images </a>
+                </li>
+                <li class="nav__option">
+                    <a href="interactive.html">
+                        <span>07</span> Interactive </a>
+                </li>
+                <li class="nav__option">
+                    <a href="#">
+                        <span>08</span> Feedback </a>
+                </li>
+                <h3 class="nav__option nav__option--bold">Navigation</h3>
+                <li class="nav__option">
+                    <a href="#">
+                        <span>09</span> Navbars </a>
+                </li>
+                <li class="nav__option">
+                    <a href="breadcrumbs.html">
+                        <span>10</span> Breadcrumbs </a>
+                </li>
+                <li class="nav__option">
+                    <a href="pagination.html">
+                        <span>11</span> Pagination </a>
+                </li>
+                <h3 class="nav__option nav__option--bold">Blocks</h3>
+                <li class="nav__option">
+                    <a href="hero.html">
+                        <span>12</span> Hero </a>
+                </li>
+                <li class="nav__option">
+                    <a href="#">
+                        <span>13</span> Carousel </a>
+                </li>
+                <li class="nav__option">
+                    <a href="#">
+                        <span>14</span> Slats </a>
+                </li>
+                <li class="nav__option">
+                        <a class="nav__option--active" href="footer.html">
+                        <span>15</span> Footer </a>
+                </li>
+                <h3 class="nav__option nav__option--bold">Components</h3>
+                <li class="nav__option">
+                    <a href="#">
+                        <span>16</span> Cards </a>
+                </li>
+                <li class="nav__option">
+                    <a href="#">
+                        <span>17</span> Forms </a>
+                </li>
+                <li class="nav__option">
+                    <a href="#">
+                        <span>18</span> Accordion </a>
+                </li>
+                <li class="nav__option">
+                    <a href="#">
+                        <span>19</span> Lists </a>
+                </li>
+            </ul>
+        </aside>
+
+    <!-- main content -->
+    <div class="content">
+      <div class="page">
+            <h1 class="title l-pb">15 Footer</h1>
+            <footer class="c-footer l-flex">
+                    <div class="c-footer-column c-footer-logo">
+                        <p>Logo</p>
+                    </div>
+                    <div class="c-footer-column c-footer-copyright">
+                        <p>&copy; 2024. All rights reserved.</p>
+                    </div>
+                    <div class="c-footer-column c-footer-social l-white-icons">
+                        <a href="#" ><i class="fa fa-facebook-square" aria-hidden="true"></i></a> 
+                        <a href="#" ><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> 
+                        <a href="#" ><i class="fa fa-twitter-square" aria-hidden="true"></i></a> 
+                    </div>
+                </footer>
+             
+
+<pre><code>
+<h3 class="title l-pb">html</h3>
+&lt;footer class=&quot;c-footer l-flex&quot;&gt;
+    &lt;div class=&quot;c-footer-column c-footer-logo&quot;&gt;
+        &lt;p&gt;Logo&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;c-footer-column c-footer-copyright&quot;&gt;
+        &lt;p&gt;&amp;copy; 2024. All rights reserved.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;c-footer-column c-footer-social l-white-icons&quot;&gt;
+        &lt;a href=&quot;#&quot; &gt;&lt;i class=&quot;fa fa-facebook-square&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+        &lt;a href=&quot;#&quot; &gt;&lt;i class=&quot;fa fa-linkedin-square&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+        &lt;a href=&quot;#&quot; &gt;&lt;i class=&quot;fa fa-twitter-square&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+    &lt;/div&gt;
+&lt;/footer&gt;
+</pre></code> 
+
+<pre><code>
+<h3 class="title l-pb">css</h3>
+.c-footer {
+background-color: #333;
+color: #fff;
+padding: var(--spacing-20);
+text-align: center;
+font-size: 14px;
+}
+
+
+.c-footer-column {
+display: inline-block;
+width: 100%;
+text-align: center;
+}
+
+.c-footer-social a {
+color: #fff;
+margin-left: var(--spacing-10);
+}
+
+
+@media (min-width: 768px) {
+.c-footer-column {
+width: 33.33%;
+}
+
+.c-footer-logo {
+text-align: left;
+}
+
+.c-footer-copyright {
+text-align: center;
+}
+
+.c-footer-social {
+text-align: right;
+}
+}
+</pre></code> 
+    </div>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("links");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
+    <!-- javascript files -->
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
