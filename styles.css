@@ -1075,6 +1075,30 @@ ul.breadcrumb {
 	text-decoration: underline;
   }
 
+  /* ------------------------- Pagination Page design css  ------------------------- */
+.c-pagination {
+	display: inline-block;
+}
+
+.c-pagination a {
+	color: var(--clr-primary);
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	border: 1px solid var(--clr-light);
+	margin: 0 4px;
+}
+
+.c-pagination a.active {
+	background-color: var(--clr-accent3);
+	color: var(--clr-white);
+	border: 1px solid var(--clr-accent3);
+}
+
+.c-pagination a:hover:not(.active) {
+	background-color:var(--clr-light);
+}
+
 
 /* ------------------------- Desktop responsiveness ------------------------- */
 

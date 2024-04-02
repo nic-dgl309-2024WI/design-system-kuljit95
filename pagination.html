@@ -11,7 +11,7 @@
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    
+
   </head>
   <body>
     <div class="c-topnav sticky-header">
@@ -55,13 +55,13 @@
           <li class="nav__option"><a href="spacing.html">04 Spacing</a>
           </li>
           <li class="nav__option">
-              <a class="nav__option" href="containers.html">05 Containers</a>
+              <a href="containers.html">05 Containers</a>
           </li>
           <li class="nav__option">
-              <a href="images.html">06 Images</a>
+              <a href="Images.html">06 Images</a>
           </li>
           <li class="nav__option">
-              <a href="interactive.html">07 Interactive</a>
+              <a href="Interactive.html">07 Interactive</a>
           </li>
           <li class="nav__option">
               <a href="#">08 Feedback</a>
@@ -71,10 +71,10 @@
               <a href="#">09 Navbars</a>
           </li>
           <li class="nav__option">
-                <a class="nav__option--active" href="breadcrumbs.html">10 Breadcrumbs</a>
+              <a href="breadcrums.html">10 Breadcrumbs</a>
           </li>
           <li class="nav__option">
-              <a href="#">11 Pagination</a>
+              <a class="nav__option--active" href="pagination.html">11 Pagination</a>
           </li>
           <h3 class="nav__option nav__option--bold">Blocks</h3>
           <li class="nav__option">
@@ -152,11 +152,11 @@
                         <span>09</span> Navbars </a>
                 </li>
                 <li class="nav__option">
-                        <a class="nav__option--active" href="breadcrumbs.html">
+                    <a href="breadcrumbs.html">
                         <span>10</span> Breadcrumbs </a>
                 </li>
                 <li class="nav__option">
-                    <a href="#">
+                        <a class="nav__option--active" href="pagination.html">
                         <span>11</span> Pagination </a>
                 </li>
                 <h3 class="nav__option nav__option--bold">Blocks</h3>
@@ -199,61 +199,59 @@
     <!-- main content -->
     <div class="content">
       <div class="page">
-            <h1 class="title l-pb">10 Breadcrumbs</h1>
-            <div>
-                    <ul class="breadcrumb">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Pictures</a></li>
-                            <li><a href="#">Summer 15</a></li>
-                            <li>Italy</li>
-                          </ul>
-            </div>    
-
+            <h1 class="title l-pb">11 Pagination</h1>
+            <div class="c-pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a class="active" href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">&raquo;</a>
+                  </div> 
+      
 <pre><code>
 <h3 class="title l-pb">html</h3>
-&lt;ul class=&quot;breadcrumb&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Pictures&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Summer 15&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;Italy&lt;/li&gt;
-&lt;/ul&gt;
-</pre></code>     
+&lt;div class=&quot;c-pagination&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;&amp;laquo;&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;
+    &lt;a class=&quot;active&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;6&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;7&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;&amp;raquo;&lt;/a&gt;
+&lt;/div&gt; 
+</pre></code>  
 
 <pre><code>
 <h3 class="title l-pb">css</h3>
-/* Style the list */
-ul.breadcrumb {
-padding: 10px 16px;
-list-style: none;
-background-color: var(--clr-light);
+.c-pagination {
+display: inline-block;
 }
 
-/* Display list items side by side */
-ul.breadcrumb li {
-display: inline;
-font-size: 18px;
-}
-
-/* Add a slash symbol (>) before/behind each list item */
-ul.breadcrumb li+li:before {
-padding: 8px;
+.c-pagination a {
 color: var(--clr-primary);
-content: ">\00a0";
-}
-
-/* Add a color to all links inside the list */
-ul.breadcrumb li a {
-color:var(--clr-accent1);
+float: left;
+padding: 8px 16px;
 text-decoration: none;
+border: 1px solid var(--clr-light);
+margin: 0 4px;
 }
 
-/* Add a color on mouse-over */
-ul.breadcrumb li a:hover {
-color: var(--clr-accent2);
-text-decoration: underline;
+.c-pagination a.active {
+background-color: var(--clr-accent3);
+color: var(--clr-white);
+border: 1px solid var(--clr-accent3);
 }
-</pre></code> 
-      
+
+.c-pagination a:hover:not(.active) {
+background-color:var(--clr-light);
+}
+</pre></code>  
     
     </div>
     </div>
@@ -267,8 +265,7 @@ text-decoration: underline;
           }
         }
       </script>
-    <!-- javascript files -->
-    <script type="text/javascript" src="main.js"></script>
-
+     <!-- javascript files -->
+     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
