@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <!-- stylesheet files -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <div class="c-topnav sticky-header">
+      <!-- top navigation for desktop -->
+      <nav class="nav">
+        <div class="logo">
+          <a href="index.html">Logo</a>
+        </div>
+        <ul class="menu menu--desktop">
+          <li class="menu__tab  ">
+            <a href="about-me.html">About Me</a>
+          </li>
+          <li class="menu__tab">
+            <a href="index.html">Demo Site</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- top navigation for mobile -->
+      <nav class="mobile-nav" id='links'>
+        <ul class="menu menu--mobile">
+          <li class="menu__tab  ">
+            <a href="about-me.html">About Me</a>
+          </li>
+          <li class="menu__tab">
+            <a href="index.html">Demo Site</a>
+          </li>
+        </ul>
+        <ul class="sidenav sidenav--mobile ">
+          <h3 class="nav__option nav__option--bold">Branding</h3>
+          <li class="nav__option">
+            <a href="colors.html">01 Colours</a>
+          </li>
+          <li class="nav__option">
+              <a href="typography.html">02 Typography</a>
+          </li>
+          <li class="nav__option">
+              <a href="#">03 Logo</a>
+          </li>
+          <h3 class="nav__option nav__option--bold">Utilities</h3>
+          <li class="nav__option"><a href="spacing.html">04 Spacing</a>
+          </li>
+          <li class="nav__option">
+              <a class="nav__option" href="containers.html">05 Containers</a>
+          </li>
+          <li class="nav__option">
+              <a href="images.html">06 Images</a>
+          </li>
+          <li class="nav__option">
+              <a href="interactive.html">07 Interactive</a>
+          </li>
+          <li class="nav__option">
+              <a href="#">08 Feedback</a>
+          </li>
+          <h3 class="nav__option nav__option--bold">Navigation</h3>
+          <li class="nav__option">
+              <a href="#">09 Navbars</a>
+          </li>
+          <li class="nav__option">
+              <a href="breadcrumbs.html">10 Breadcrumbs</a>
+          </li>
+          <li class="nav__option">
+              <a href="pagination.html">11 Pagination</a>
+          </li>
+          <h3 class="nav__option nav__option--bold">Blocks</h3>
+          <li class="nav__option">
+              <a href="hero.html">12 Hero</a>
+          </li>
+          <li class="nav__option">
+              <a href="#">13 Carousel</a>
+          </li>
+          <li class="nav__option">
+              <a href="#">14 Slats</a>
+          </li>
+          <li class="nav__option">
+              <a href="footer.html">15 Footer</a>
+          </li>
+          <h3 class="nav__option nav__option--bold">Components</h3>
+          <li class="nav__option">
+              <a href="cards.html">16 Cards</a>
+          </li>
+          <li class="nav__option">
+                <a class="nav__option--active" href="forms.html">17 Forms</a>
+          </li>
+          <li class="nav__option">
+              <a href="#">18 Accordion</a>
+          </li>
+          <li class="nav__option">
+              <a href="#">19 Lists</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <!-- sidebar -->
+    <aside class="navigation">
+            <ul class="sidenav sidenav--desktop sticky-sidebar">
+                <h3 class="nav__option nav__option--bold">Branding</h3>
+                <li class="nav__option">
+                    <a href="colors.html">
+                        <span>01</span> Colours </a>
+                </li>
+                <li class="nav__option">
+                    <a class="nav__option" href="typography.html">
+                        <span>02</span> Typography </a>
+                </li>
+                <li class="nav__option">
+                    <a href="#">
+                        <span>03</span> Logo </a>
+                </li>
+                <h3 class="nav__option nav__option--bold">Utilities</h3>
+                <li class="nav__option">
+                    <a href="spacing.html">
+                        <span>04</span> Spacing </a>
+                </li>
+                <li class="nav__option">
+                    <a href="containers.html">
+                        <span>05</span> Containers </a>
+                </li>
+                <li class="nav__option">
+                    <a href="images.html">
+                        <span>06</span> Images </a>
+                </li>
+                <li class="nav__option">
+                    <a href="interactive.html">
+                        <span>07</span> Interactive </a>
+                </li>
+                <li class="nav__option">
+                    <a href="#">
+                        <span>08</span> Feedback </a>
+                </li>
+                <h3 class="nav__option nav__option--bold">Navigation</h3>
+                <li class="nav__option">
+                    <a href="#">
+                        <span>09</span> Navbars </a>
+                </li>
+                <li class="nav__option">
+                    <a href="breadcrumbs.html">
+                        <span>10</span> Breadcrumbs </a>
+                </li>
+                <li class="nav__option">
+                    <a href="pagination.html">
+                        <span>11</span> Pagination </a>
+                </li>
+                <h3 class="nav__option nav__option--bold">Blocks</h3>
+                <li class="nav__option">
+                    <a href="hero.html">
+                        <span>12</span> Hero </a>
+                </li>
+                <li class="nav__option">
+                    <a href="#">
+                        <span>13</span> Carousel </a>
+                </li>
+                <li class="nav__option">
+                    <a href="#">
+                        <span>14</span> Slats </a>
+                </li>
+                <li class="nav__option">
+                    <a href="footer.html">
+                        <span>15</span> Footer </a>
+                </li>
+                <h3 class="nav__option nav__option--bold">Components</h3>
+                <li class="nav__option">
+                    <a href="cards.html">
+                        <span>16</span> Cards </a>
+                </li>
+                <li class="nav__option">
+                        <a class="nav__option--active" href="forms.html">
+                        <span>17</span> Forms </a>
+                </li>
+                <li class="nav__option">
+                    <a href="#">
+                        <span>18</span> Accordion </a>
+                </li>
+                <li class="nav__option">
+                    <a href="#">
+                        <span>19</span> Lists </a>
+                </li>
+            </ul>
+        </aside>
+
+    <!-- main content -->
+    <div class="content">
+      <div class="page">
+            <h1 class="title">17 Forms</h1>
+            <div class="fourth-section fourth-section-n ">
+                    <div class="l-left-column">
+                        <form action="#" method="post">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address here..." required>
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" placeholder="Enter your subject here..." required>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Enter your message here..." required></textarea>
+                            <input type="submit" value="Submit" class="button">
+                        </form>
+                    </div>
+            </div>      
+      
+    
+<pre><code>
+<h3 class="title l-pb">html</h3>
+&lt;div class=&quot;fourth-section fourth-section-n &quot;&gt;
+    &lt;div class=&quot;l-left-column&quot;&gt;
+        &lt;form action=&quot;#&quot; method=&quot;post&quot;&gt;
+            &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+            &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; placeholder=&quot;Enter your email address here...&quot; required&gt;
+            &lt;label for=&quot;subject&quot;&gt;Subject:&lt;/label&gt;
+            &lt;input type=&quot;text&quot; id=&quot;subject&quot; name=&quot;subject&quot; placeholder=&quot;Enter your subject here...&quot; required&gt;
+            &lt;label for=&quot;message&quot;&gt;Message:&lt;/label&gt;
+            &lt;textarea id=&quot;message&quot; name=&quot;message&quot; rows=&quot;5&quot; placeholder=&quot;Enter your message here...&quot; required&gt;&lt;/textarea&gt;
+            &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; class=&quot;button&quot;&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+&lt;/div&gt; 
+</pre></code>
+
+<pre><code>
+<h3 class="title l-pb">css</h3>
+.fourth-section {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-top: var(--spacing-40);
+width: 100%;
+margin: auto;
+}
+
+.fourth-section .l-left-column {
+width: 100%;
+padding: var(--spacing-20);
+box-sizing: border-box;
+}
+
+.fourth-section .l-right-column {
+width: 100%;
+padding: var(--spacing-20);
+box-sizing: border-box;
+margin: auto;
+}
+
+.fourth-section input[type="email"],
+.fourth-section input[type="text"],
+.fourth-section textarea {
+width: 100%;
+padding: var(--spacing-10);
+margin-bottom: var(--spacing-10);
+border: 1px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;
+}
+
+.fourth-section input[type="submit"] {
+border: none;
+cursor: pointer;
+width: 100%;
+}
+
+
+@media (min-width: 768px) {
+.fourth-section{
+    width: 80%;
+}
+
+.fourth-section-n {
+    width: 100% !important;
+}
+
+.fourth-section .l-left-column {
+    width: 45%;
+    /* Adjust as needed */
+    padding: var(--spacing-20);
+    box-sizing: border-box;
+}
+
+.fourth-section .l-right-column {
+    width: 50%;
+}
+}
+</pre></code>
+
+    </div>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("links");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
+     <!-- javascript files -->
+     <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
