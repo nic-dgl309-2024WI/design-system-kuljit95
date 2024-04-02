@@ -1042,6 +1042,28 @@ code h3 {
 	width: 100%;
 }
 
+/* ------------------------- Navbar Page design css  ------------------------- */
+.navigation .aside {
+	width: 20%;
+	padding: 0px 10px 0px 10px;
+	background-color: var(--clr-light);
+	min-height: 1500px;
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	/* overflow-x: hidden; */
+}
+
+.aside .sidenav li a {
+	color: var(--clr-primary);
+	text-decoration: none;
+}
+
+.aside .sidenav li a:hover {
+	color: var(--clr-accent1);
+}
 /* ------------------------- Breadcrums Page design css  ------------------------- */
 /* Style the list */
 ul.breadcrumb {
