@@ -1201,6 +1201,11 @@ ul.breadcrumb {
 	margin: 0px;
 }
 
+.comingsoon{
+	padding: 17% 0 20%;
+	height: 100vh;
+}
+
 /* ------------------------- Desktop responsiveness ------------------------- */
 
 @media (min-width: 768px) {

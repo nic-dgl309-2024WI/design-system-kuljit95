@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- stylesheet files -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <div class="c-topnav">
+        <!-- top navigation for desktop -->
+        <nav class="nav">
+            <div class="logo">
+                <a href="index.html">Logo</a>
+            </div>
+            <div class="desk">
+              <ul class="menu menu--desktop">
+                <li class="menu__tab"><a href="coming soon.html">Products</a></li>
+                <li class="menu__tab"><a href="coming soon.html">Resources</a></li>
+                <li class="menu__tab"><a href="coming soon.html">Services</a></li>
+                <li class="menu__tab"><a href="coming soon.html">About us</a></li>
+                <li class="menu__tab"><a href="coming soon.html">Contact us</a></li>
+                <li class="menu__tab2"><a href="#" class="button">000-000-000</a></li>
+              </ul>
+            </div>
+        </nav>
+        <!-- top navigation for mobile -->
+        <nav class="mobile-nav" id='links'>
+          <ul class="menu menu--mobile">
+            <li class="menu__tab"><a href="coming soon.html">Products</a></li>
+            <li class="menu__tab"><a href="coming soon.html">Resources</a></li>
+            <li class="menu__tab"><a href="coming soon.html">Services</a></li>
+            <li class="menu__tab"><a href="coming soon.html">About us</a></li>
+            <li class="menu__tab"><a href="coming soon.html">Contact us</a></li>
+            <a href="#" class="button">000-000-000</a>
+        </ul>
+      </nav>    
+        <a class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- main content -->
+
+    <!-- Section 1 -->
+    <div class="l-section c-hero comingsoon">
+        <div class="c-hero-container">
+          <h2 class="u-font-size-48">Coming Soon</h2>
+        </div>
+    </div>    
+
+    <!-- Section 2 --> 
+    <footer class="c-footer l-flex">
+        <div class="c-footer-column c-footer-logo">
+            <p>Logo</p>
+        </div>
+        <div class="c-footer-column c-footer-copyright">
+            <p>&copy; 2024 Outback Nursery. All rights reserved.</p>
+        </div>
+        <div class="c-footer-column c-footer-social l-white-icons">
+            <a href="#" ><i class="fa fa-facebook-square" aria-hidden="true"></i></a> 
+            <a href="#" ><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> 
+            <a href="#" ><i class="fa fa-twitter-square" aria-hidden="true"></i></a> 
+        </div>
+    </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("links");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
+    <!-- javascript files -->
+    <script type="text/javascript" src="main.js"></script>          
+</body>
+
+</html>
