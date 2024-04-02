@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
   --clr-primary: #333333;
 	--clr-secondary: #A01313;
@@ -442,9 +444,13 @@ li {
 }
 
 /* ----------------------- Set all nav menu List float right for desktop  ----------------------- */
+.menu--desktop {
+	float: right;
+	padding-right: var(--spacing-10);
+}
+
 nav .menu.menu--desktop li {
-  float: right;
-  padding-right: var(--spacing-10);
+	float: left;
 }
 /* ------------------------- Set Background color of top nav ------------------------- */
 .c-topnav {
@@ -473,6 +479,13 @@ padding: var(--spacing-10);
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.c-topnav a.iconSample {
+	display: block;
+    position: absolute;
+	right: 20px;
+    margin-top: -10%;
 }
 
 /* ---------------------------- Styling colour on hover for menu item ---------------------------- */
@@ -508,16 +521,15 @@ aside .sidenav li a:hover {
 
 /* ---------------------------- Styling side nav ---------------------------- */
 aside.navigation {
-width: 20%;
-padding: 60px 10px 0px 10px;
-background-color: var(--clr-light);
-min-height: 1500px;
-height: 100%;
-position: fixed;
-z-index: 1;
-top: 0;
-left: 0;
-/* overflow-x: hidden; */
+	width: 20%;
+	padding: 0px 10px 0px 10px;
+	background-color: var(--clr-light);
+	min-height: 1500px;
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	/* overflow-x: hidden; */
 }
 
 /* ---------------------------- Styling sidenav ---------------------------- */
@@ -532,9 +544,16 @@ left: 0;
 color: var(--clr-accent3);
 }
 
-h3.nav__option {
-padding-bottom: 0px;
-padding-top: 0px;
+p.nav__option {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: var(--font-size-16);
+    margin: 0;
+    font-family: var(--font-third);
+    letter-spacing: var(--letterspacing-md);
+    line-height: var(--lineheight-md);
+    text-transform: uppercase;
+    color: var(--clr-accent2);
 }
 
 /* ------------------------- Defining H1 Padding ------------------------- */
@@ -585,67 +604,71 @@ h1.title {
   padding-top: var(--spacing-80);
 }
 
-/* ---------------------------- Apply shadow for colour swatches  ---------------------------- */
+/* ------------------------- Styling colorswatch In content ------------------------- */
 .c-colorswatch {
-border: 1px solid var(--clr-primary);
-margin-top: 1rem;
+	border: 1px solid var(--clr-primary);
+	margin-top: 1rem;
 }
 
-/* ---------------------------- Styling primary colour swatch ---------------------------- */
-.c-colorswatch-primary{
-  height: var(--spacing-60);
-  width: 100%;
-  background-color: var(--clr-primary);
+/* ------------------------- Styling colorswatch In content ------------------------- */
+.c-colorswatch-primary {
+	height: var(--spacing-60);
+	width: 100%;
+	background-color: var(--clr-primary);
 }
 
-/* ---------------------------- Styling secondary colour swatch ---------------------------- */
-.c-colorswatch-secondry{
-  height: var(--spacing-60);
-  width: 100%;
-  background-color: var(--clr-secondry);
+/* ------------------------- Styling colorswatch In content ------------------------- */
+.c-colorswatch-secondary {
+	height: var(--spacing-60);
+	width: 100%;
+	background-color: var(--clr-secondary);
 }
 
-/* ---------------------------- Styling light colour swatch ---------------------------- */
-.c-colorswatch-light{
-  height: var(--spacing-60);
-  width: 100%;
-  background-color: var(--clr-light);
+/* ------------------------- Styling colorswatch In content ------------------------- */
+.c-colorswatch-light {
+	height: var(--spacing-60);
+	width: 100%;
+	background-color: var(--clr-light);
 }
 
-/* ---------------------------- Styling white colour swatch ---------------------------- */
-.c-colorswatch-white{
-  height: var(--spacing-60);
-  width: 100%;
-  background-color: var(--clr-white);
+/* ------------------------- Styling colorswatch In content ------------------------- */
+.c-colorswatch-white {
+	height: var(--spacing-60);
+	width: 100%;
+	background-color: var(--clr-white);
 }
 
-/* ---------------------------- Styling accent1 colour swatch ---------------------------- */
-.c-colorswatch-accent1{
-  height: var(--spacing-60);
-  width: 100%;
-  background-color: var(--clr-accent1);
+/* ------------------------- Styling colorswatch In content ------------------------- */
+.c-colorswatch-accent1 {
+	height: var(--spacing-60);
+	width: 100%;
+	background-color: var(--clr-accent1);
 }
 
-/* ---------------------------- Styling accent2 colour swatch ---------------------------- */
-.c-colorswatch-accent2{
-  height: var(--spacing-60);
-  width: 100%;
-  background-color: var(--clr-accent2);
+/* ------------------------- Styling colorswatch In content ------------------------- */
+.c-colorswatch-accent2 {
+	height: var(--spacing-60);
+	width: 100%;
+	background-color: var(--clr-accent2);
 }
 
-/* ---------------------------- Styling accent3 colour swatch ---------------------------- */
-.c-colorswatch-accent3{
-  height: var(--spacing-60);
-  width: 100%;
-  background-color: var(--clr-accent3);
+/* ------------------------- Styling colorswatch In content ------------------------- */
+.c-colorswatch-accent3 {
+	height: var(--spacing-60);
+	width: 100%;
+	background-color: var(--clr-accent3);
+}
+
+.column-33 {
+	width: 100%
 }
 
 /* ---------------------------- media quaries - desktop specific ---------------------------- */
 @media (min-width: 768px) {
   /* ---------------------------- Hiding Toggle icon from desktop ---------------------------- */
-  .c-topnav a.icon {
-      display: none;
-  }
+  .c-topnav a.icon, .c-topnav a.iconSample {
+	display: none;
+}
 
   /* ---------------------------- Showing Top menu for desktop ---------------------------- */
   .menu--desktop {
