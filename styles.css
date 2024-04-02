@@ -1171,6 +1171,14 @@ ul.breadcrumb {
 .c-accordion-item.active .c-accordion-content {
 	display: block;
 }
+
+/* ------------------------- List Page design css  ------------------------- */
+.list ul,li,ol{
+	list-style-type: revert;
+	padding: revert;
+	margin: 0px;
+}
+
 /* ------------------------- Desktop responsiveness ------------------------- */
 
 @media (min-width: 768px) {
