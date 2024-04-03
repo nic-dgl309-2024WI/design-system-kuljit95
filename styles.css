@@ -402,7 +402,8 @@ li {
 }
 
 .grid-item {
-	background-color: lightgreen;
+	background-color: var(--clr-accent3);
+	color: #eeeeee;
 	padding: var(--spacing-10);
 	text-align: center;
 }
@@ -410,7 +411,8 @@ li {
 .max-width {
 	max-width: 1200px;
 	margin: 0 auto;
-	background-color: lightcoral;
+	background-color: var(--clr-primary);
+	color: #eeeeee;
 	padding: 20px 20px 60px 20px;
 	box-sizing: border-box;
 }
@@ -754,7 +756,9 @@ section {
 .menu__tab .nav__option--active {
 color: var(--clr-accent1);
 }
-
+.menu__tab2 a {
+	color: #ffffff !important;
+}
 
 /* ------------------------- START: homepage design css  ------------------------- */
 
