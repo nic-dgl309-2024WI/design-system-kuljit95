@@ -1232,9 +1232,19 @@ ul.breadcrumb {
 	height: 100vh;
 }
 
+@media (max-width: 768px) {
+	#products-desk {
+		display: none;
+	}}
+
 /* ------------------------- Desktop responsiveness ------------------------- */
 
 @media (min-width: 768px) {
+
+	#products-mob {
+		display: none;
+	}
+	
 	.c-flex__item {
 		width: calc(25% - 20px);
 	}
