@@ -790,7 +790,7 @@ color: var(--clr-accent1);
 }
 
 .l-section.c-hero {
-	background-image: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(images/hero-image.jpg);
+	background-image: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(Images/hero-image.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 }
