@@ -1009,7 +1009,14 @@ h3 {
 	width: 100%;
 	text-align: center;
 }
-
+.c-footer-logo a img{
+	border-radius: 50%;
+	width: 50px;
+}
+.c-footer-logo a {
+	display: block;
+	height: 50px;
+}
 .c-footer-social a {
 	color: #fff;
 	margin-left: var(--spacing-10);
@@ -1021,6 +1028,9 @@ h3 {
 .l-purple-icons i{
 	color: #5e1386; 
 	font-size: 30px;
+}
+.c-footer-copyright, .c-footer-social {
+	padding:15px 0;
 }
 
 /* ------------------------- Images Page design css  ------------------------- */
