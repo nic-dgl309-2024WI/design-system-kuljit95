@@ -141,6 +141,83 @@
   </div>
 </div>
 
+    <!-- Resources -->  
+    <div class="  ">
+      <div id="resources" class="l-each-section width-900 ">
+              <h2 class="u-font-size-36 u-text-primary all-center">Tips for planting</h2>
+              <div class="c-accordion">
+                      <div class="c-accordion-item">
+                          <div class="c-accordion-title">Before Planting</div>
+                          <div class="c-accordion-content list">
+                              <ul>    
+                              <li>Make sure your Trees & Shrubs are well watered before planting.</li>
+  
+                                  <li>Place your new purchases in afternoon shade if you're unable to plant them right away during summer.</li>
+                                  
+                                  <li>Never plant during the heat of the day, wait until evening.</li>
+                                  
+                                  <li>Make sure you have the right location for your plant to thrive, check soil and exposure requirements.</li>
+                                  
+                                  <li>Most plants don't do well in poor draining soil.</li>
+                                  
+                                  <li>If you're unsure dig a test hole, fill it with water and see how quickly it drains.</li>
+                              </ul>
+                          </div>
+                      </div>
+                  
+                      <div class="c-accordion-item">
+                          <div class="c-accordion-title">Planting</div>
+                          <div class="c-accordion-content list">
+                          <ul>    
+                              <li>Dig a hole that's as deep as the container or root-ball but twice as wide, if possible.</li>
+  
+                              <li>Never create a water bowl in hard-pan the water will be unable to drain properly.</li>
+                                      
+                              <li>Remove the plant carefully from the container. Never break up the root system on trees and shrubs.</li>
+                                      
+                              <li>B&B trees should be planted intact, remove the string and roll back the burlap away from the trunk.  DO NOT REMOVE THE BURLAP.</li>
+                                      
+                              <li>Bury the burlap it is biodegradable</li>
+                                      
+                              <li>Back fill the hole with the existing soil, for poor soils amend with a good quality bark mulch or compost.</li>
+                                      
+                              <li>Sandy soils can be amended with peat moss, for better water retention.</li>
+                                      
+                              <li>When back filling, make sure there are no air pockets or roots showing above the surface.</li>
+                                      
+                              <li>Do not plant too deep; covering the trunk too high can lead to serious problems.</li>
+                                      
+                              <li>Firm the soil gently around the plant, your foot works best.</li>
+                                      
+                              <li>Stake large trees to keep them stable and growing straight.</li>
+                                      
+                              <li>Protect young trees from Deer and Rabbits.</li>
+                                      
+                              <li>Give your newly planted tree or shrub a good soaking, depending on the weather.</li>
+                          </ul>
+                          </div>
+                          </div>
+                  
+                      <div class="c-accordion-item">
+                          <div class="c-accordion-title">After Care</div>
+                          <div class="c-accordion-content list">
+                              <ul>
+                                  <li>Water regularly for at least the first two years after planting regardless if the plants are drought tolerant.</li>
+  
+                                  <li>It's important to develop a good root system; your plants will be able to tolerate long dry spells better.</li>
+                                  
+                                  <li>Water deeply and less often than a light sprinkle once a day, how often will depend on the weather.</li>
+                                  
+                                  <li>Best time to water is in the evening, this will help keep the soil hydrated through the night.</li>
+                                  
+                                  <li>Fertilize with a slow release fertilizer in spring at least for the first five years.</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              
+      </div>  </div> 
+
 <!-- Section 4 -->
 <div class="l-each-section all-center fourth-bg">
   <h2 class="u-font-size-36 u-text-primary ">What we offer more than plants?</h2>
@@ -311,5 +388,22 @@ function prevtestimonial() {
 
   <!-- javascript files -->
   <script type="text/javascript" scr="main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const accordionItems = document.querySelectorAll('.c-accordion-item');
+
+        accordionItems.forEach(item => {
+            item.addEventListener('click', function() {
+                accordionItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                this.classList.toggle('active');
+            });
+        });
+    });
+</script>
 </body>
 </html>
