@@ -73,6 +73,7 @@ h5 {
 	font-family: var(--font-primary);
 	letter-spacing: var(--letterspacing-md);
 	line-height: var(--lineheight-md);
+	text-transform: uppercase;
 }
 
 h3 {
@@ -317,7 +318,7 @@ li {
   /* To set side bar sticky */
 .sticky-sidebar {
     position: sticky;
-    top: 50px;
+    top: 60px;
     height: auto;
     min-width: 210px;
     max-width: 210px;
@@ -331,7 +332,7 @@ li {
   /* To set header sticky */
   .sticky-header {
       position: fixed;
-    top: 0;
+      top: 0;
       width: 100%;
       background-color: var(--clr-light);
       z-index:999;
@@ -358,6 +359,12 @@ li {
 .width-500{
 	max-width: 500px;
 	margin: 0 auto;
+}
+
+/* max-width 900px */
+.width-900 {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
   /* To set content center */
@@ -403,7 +410,6 @@ li {
 
 .grid-item {
 	background-color: var(--clr-accent3);
-	color: #eeeeee;
 	padding: var(--spacing-10);
 	text-align: center;
 }
@@ -412,7 +418,6 @@ li {
 	max-width: 1200px;
 	margin: 0 auto;
 	background-color: var(--clr-primary);
-	color: #eeeeee;
 	padding: 20px 20px 60px 20px;
 	box-sizing: border-box;
 }
@@ -441,7 +446,6 @@ li {
 /* ------------------------- Design Css Starts ------------------------- */
 /* ---------------------------- Logo width described ---------------------------- */
 .logo {
-  width: 20%;
   float: none;
 }
 
@@ -462,11 +466,14 @@ padding: var(--spacing-10);
 }
 
 /* ---------------------------- Hiding top nav on mobile ---------------------------- */
-.c-topnav #links {
+.c-topnav #links, .c-topnav #linksSample {
   display: none;
 }
 
 /* ---------------------------- styling top nav ---------------------------- */
+.c-topnav .logo a{
+	padding: 0;
+}
 .c-topnav a {
   padding: var(--spacing-10);
   text-decoration: none;
@@ -480,7 +487,7 @@ padding: var(--spacing-10);
 .c-topnav a.icon {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 25px;
 }
 
 .c-topnav a.iconSample {
@@ -687,8 +694,9 @@ h1.title {
 
   /* ---------------------------- Setting Logo stays on left ---------------------------- */
   .logo {
-      float: left;
-      font-weight: 400;
+	float: left;
+	position: absolute;
+	top: -6px;
   }
   
   /* ---------------------------- Showing sidenav on desktop ---------------------------- */
@@ -698,10 +706,6 @@ h1.title {
 
   /* Content Page */
   
-  /* ---------------------------- Removing floats ---------------------------- */
-  section{
-      clear: both;
-  }
 
   /* ------------------------- Setting main content to take 80% space rest 20% set for sidenav ------------------------- */
 .content {
@@ -876,7 +880,6 @@ h3 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-top: var(--spacing-40);
 	width: 100%;
 	margin: auto;
 }
@@ -985,7 +988,7 @@ h3 {
 }
 
 .l-newsletter-section {
-	background-image: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(Images/cta.jpg);
+	background-image: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(images/cta.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -1048,16 +1051,13 @@ border-radius: 5px;
 border: 1px solid var(--clr-light2);
 }
 
-code {
+.code {
 background-color:  var(--clr-light2);
 border: 1px solid var(--clr-grey);
 display: block;
 padding: 20px 20px 40px 20px;
 border-radius: 5px;
-text-wrap: balance;
-}
-code h3 {
-  padding-top: 0px;
+white-space: break-spaces;
 }
 
 /* ------------------------- Interactive Page design css  ------------------------- */
