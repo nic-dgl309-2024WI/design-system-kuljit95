@@ -405,6 +405,7 @@ li {
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	color: #ccc;
 	gap: var(--spacing-20);
 }
 
@@ -419,6 +420,7 @@ li {
 	margin: 0 auto;
 	background-color: var(--clr-primary);
 	padding: 20px 20px 60px 20px;
+	color: #ccc;
 	box-sizing: border-box;
 }
 
@@ -794,7 +796,7 @@ color: var(--clr-accent1);
 }
 
 .l-section.c-hero {
-	background-image: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(Images/hero-image.jpg);
+	background-image: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(images/hero-image.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 }
