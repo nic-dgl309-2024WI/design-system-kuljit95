@@ -788,7 +788,7 @@ color: var(--clr-accent1);
 	box-shadow: var(--btn-shd);
 }
 
-/* ------------------------- Styling First Section ------------------------- */
+/* ------------------------- Styling Hero Section ------------------------- */
 .c-hero-container {
 	text-align: center;
 }
@@ -799,7 +799,7 @@ color: var(--clr-accent1);
 	background-attachment: fixed;
 }
 
-/* ------------------------- Styling Second Section ------------------------- */
+/* ------------------------- Styling Products Section ------------------------- */
 section {
 	padding: 5%;
 }
@@ -840,7 +840,7 @@ h3 {
 	color: var(--clr-accent2);
 }
 
-/* ------------------------- Styling Thrid Section ------------------------- */
+/* ------------------------- Styling About Us Section ------------------------- */
 
 .third-section {
 	display: flex;
@@ -875,7 +875,7 @@ h3 {
 	height: auto;
 }
 
-/* ------------------------- Styling Forth Section ------------------------- */
+/* ------------------------- Styling Contact Us Section ------------------------- */
 .fourth-section {
 	display: flex;
 	flex-wrap: wrap;
@@ -919,7 +919,7 @@ h3 {
 	width: 100%;
 }
 
-/* ------------------------- Styling Sixth Section ------------------------- */
+/* ------------------------- Styling Testimonials Section ------------------------- */
 .c-carousel {
 	width: 100%;
 	overflow: hidden;
@@ -967,7 +967,7 @@ h3 {
 	right: 0;
 }
 
-/* ------------------------- Styling Seventh Section ------------------------- */
+/* ------------------------- Styling Newsletter Section ------------------------- */
 .l-newsletter-section {
 	background-color: #f2f2f2;
 }
